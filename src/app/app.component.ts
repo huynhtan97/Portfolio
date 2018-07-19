@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // REMEMBER TO ALWAYS RUN "sudo ngh --dir dist/PersonalWebsite"
   title = 'app';
 }
