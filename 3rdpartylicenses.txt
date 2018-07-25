@@ -129,6 +129,10 @@ SOFTWARE.
 MIT
 MIT
 
+@angular/router@5.2.11
+MIT
+MIT
+
 @angular/cdk@5.2.5
 MIT
 The MIT License
