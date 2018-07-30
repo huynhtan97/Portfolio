@@ -1,0 +1,24 @@
+<!-- Mobile/Tablet -->
+<div class="homebar" [class.is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="homebar-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon style="font-size: 32px !important">more_vert</mat-icon>
+    </button>
+    <h1 routerLink= "">An Huynh</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav (click)="snav.toggle()" [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item href="../../assets/documents/AnHuynhResume2018.pdf"> <b>Resume</b> </a>
+        <a mat-list-item routerLink = "/Skills"> <b>Skills</b> </a>
+        <a mat-list-item routerLink = "/Projects"> <b>Projects</b> </a>
+        <a mat-list-item routerLink = "/Achievements"> <b>Achievements</b> </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+  </mat-sidenav-container>
+</div>
+
