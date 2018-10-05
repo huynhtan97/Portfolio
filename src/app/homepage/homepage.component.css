@@ -94,13 +94,15 @@
 }
 
 .about-me .col-left{
+  content: url('../../assets/images/PersonalPic.jpg');
   padding-left: 5%;
   padding-right: 5%;
-}
-
-.about-me .col-left img {
   max-width: 100%; /* Allows image to automatically resize with browser */
 }
+
+/* .about-me .col-left img {
+  max-width: 100%;
+} */
 
 .about-me .col-right p{
   flex: 1;
