@@ -22,25 +22,25 @@
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
-.header-section-text h1{
+.header-section-text h1 {
   font-size: 60px;
   margin: 0;
 }
 
-.header-section-text h1 span{
+.header-section-text h1 span {
   border: 5px solid white;
   padding: 6px 14px;
   display: inline-block;
 }
 
-.header-description{
+.header-description {
   margin: 20px;
   display: block;
   font-size: 30px;
   text-shadow: 0 0 10px black;
 }
 
-.btn{
+.btn {
   color: white;
   padding: 10px 24px;
   font-size: 20px;
@@ -50,24 +50,24 @@
   transition: 0.3s all;
 }
 
-.btn:hover{
+.btn:hover {
   opacity: .80;
 }
 
-/* About me */
-.about-me, .contact-me{
+/* About me AND Contact me*/
+.about-me, .contact-section {
   width: 100%; /* width of parent element*/
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
-.about-me:after, .contact-me:after{ /* Fixing issue with col-left and col-right not being "contained" inside main class */
+.about-me:after, .contact-section :after { /* Fixing issue with col-left and col-right not being "contained" inside main class */
   content: '';
   display:block;
   clear: both;
 }
 
-.about-me h2, .contact-me h2{
+.about-me h2, .contact-section h2 {
   color: #333;
   text-align: center;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 }
 
 /* Creating the "section" line */
-.about-me h2:after, .contact-me h2:after{
+.about-me h2:after, .contact-section h2:after {
   content: '';
   position: absolute;
   width: 80px;
@@ -87,44 +87,93 @@
   background-color: lightgray;
 }
 
-.about-me .col-left, .about-me .col-right{
+/* About me */
+.about-me .col-left, .about-me .col-right {
   padding-top: 20px;
   width: 50%; /* splitting page in half */
   float: left;
 }
 
-.about-me .col-left{
+.about-me .col-left {
   content: url('../../assets/images/PersonalPic.jpg');
   padding-left: 5%;
   padding-right: 5%;
   max-width: 100%; /* Allows image to automatically resize with browser */
 }
 
-/* .about-me .col-left img {
-  max-width: 100%;
-} */
-
-.about-me .col-right p{
+.about-me .col-right p {
   flex: 1;
   width: 100%;
   overflow: auto;
   font-size: 20px;
 }
 
-/* Fix issue with section colliding with media query */
+/* Specify what page does when screen gets smaller with media query */
 @media screen and (max-width:550px) {
   .about-me .col-left, .about-me .col-right {
     width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 /* Contact me */
-.contact-me .contact-info{
+/* .contact-me .contact-info{
   padding-top: 20px;
   text-align: center;
 }
 
 td:nth-child(2) {
   padding-right: 20px;
+} */
+
+.contact-section {
+  text-align: center;
+}
+
+.social-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.social-container i {
+  float: left;
+  margin-top: 17px;
+  margin-right: 20px;
+  font-size: 24px;
+  color: blue;
+}
+
+.col-1, .col-2, .col-3 {
+  width: 33.3333333%;
+  display: inline-block;
+  float: left;
+}
+
+.col-1 p, .col-2 p, .col-3 p {
+  display: inline-block;
+  position: relative;
+}
+
+.col-3 p{
+  margin-bottom: 0;
+  margin-top: 7px;
+}
+
+.text-bold{
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+
+/* Specify what page does when screen gets smaller with media query */
+@media screen and (max-width:715px) {
+  .social-container .col-1, .social-container .col-2, .social-container .col-3 {
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-left: 20%;
+    padding: 5px;
+  }
 }
