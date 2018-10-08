@@ -40,20 +40,6 @@
   text-shadow: 0 0 10px black;
 }
 
-.btn {
-  color: white;
-  padding: 10px 24px;
-  font-size: 20px;
-  text-decoration: none;
-  background: #aaa1a1;
-  border-radius: 10px;
-  transition: 0.3s all;
-}
-
-.btn:hover {
-  opacity: .80;
-}
-
 /* About me AND Contact me*/
 .about-me, .contact-section {
   width: 100%; /* width of parent element*/
@@ -84,7 +70,7 @@
   margin-left: -40px;
   left: 50%;
   bottom: 0px;
-  background-color: lightgray;
+  background-color: #666666;
 }
 
 /* About me */
@@ -118,20 +104,13 @@
 }
 
 /* Contact me */
-/* .contact-me .contact-info{
-  padding-top: 20px;
-  text-align: center;
-}
-
-td:nth-child(2) {
-  padding-right: 20px;
-} */
-
 .contact-section {
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .social-container {
+  padding-top: 20px;
   width: 80%;
   margin: 0 auto;
   text-align: left;
@@ -174,4 +153,31 @@ td:nth-child(2) {
     margin-left: 20%;
     padding: 5px;
   }
+}
+
+/* Footer */
+footer{
+  background-color: #d8d4db;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+footer:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer-text{
+  text-align: center;
+}
+
+.footer-text p{
+  margin-top: 5;
+  margin-bottom: 0;
+}
+
+.brown-text{
+  color: brown;
+  font-weight: bold;
 }

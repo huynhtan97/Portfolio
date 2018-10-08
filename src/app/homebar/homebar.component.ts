@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-
-import {MediaMatcher} from '@angular/cdk/layout';
-import {ChangeDetectorRef, OnDestroy} from '@angular/core';
+import { MediaMatcher } from '@angular/cdk/layout';
+import { ChangeDetectorRef, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-homebar',
