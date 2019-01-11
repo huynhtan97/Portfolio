@@ -1,0 +1,59 @@
+/* Header on top of page */
+.header{
+  width: 100%; /* width of parent element*/
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.header:after{
+  content: '';
+  display:block;
+  clear: both;
+}
+
+.header h2 {
+  color: #666666;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Creating the "section" line */
+.header h2:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #666666;
+}
+
+.header h5{
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Each individal chip*/
+mat-chip {
+  max-width: 200px;
+}
+mat-chip:hover{
+  color: lightgray;
+  cursor: pointer;
+}
+.mat-tooltip {
+  color: #fff;
+  border-radius: 2px;
+  margin: 14px;
+  max-width: 250px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
