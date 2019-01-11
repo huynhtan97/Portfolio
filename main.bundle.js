@@ -172,15 +172,17 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__material_module__ = __webpack_require__("./src/app/material.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__ = __webpack_require__("./node_modules/ngx-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__homebar_homebar_component__ = __webpack_require__("./src/app/homebar/homebar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__skills_skills_component__ = __webpack_require__("./src/app/skills/skills.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__achievements_achievements_component__ = __webpack_require__("./src/app/achievements/achievements.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__homepage_homepage_component__ = __webpack_require__("./src/app/homepage/homepage.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_hammerjs__ = __webpack_require__("./node_modules/hammerjs/hammer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_hammerjs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__material_module__ = __webpack_require__("./src/app/material.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__ = __webpack_require__("./node_modules/ngx-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__homebar_homebar_component__ = __webpack_require__("./src/app/homebar/homebar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__skills_skills_component__ = __webpack_require__("./src/app/skills/skills.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__achievements_achievements_component__ = __webpack_require__("./src/app/achievements/achievements.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__homepage_homepage_component__ = __webpack_require__("./src/app/homepage/homepage.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -192,6 +194,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 // Angular Material
+
 
 
 // ngx-bootstrap
@@ -211,35 +214,35 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__homebar_homebar_component__["a" /* HomebarComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__skills_skills_component__["a" /* SkillsComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__projects_projects_component__["a" /* ProjectsComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__achievements_achievements_component__["a" /* AchievementsComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__homepage_homepage_component__["a" /* HomepageComponent */]
+                __WEBPACK_IMPORTED_MODULE_8__homebar_homebar_component__["a" /* HomebarComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__skills_skills_component__["a" /* SkillsComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__projects_projects_component__["a" /* ProjectsComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__achievements_achievements_component__["a" /* AchievementsComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__homepage_homepage_component__["a" /* HomepageComponent */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_6__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */],
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__material_module__["a" /* AppMaterialModules */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_5__material_module__["a" /* AppMaterialModules */],
                 // ngx-bootstrap modules
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["a" /* AccordionModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["b" /* AlertModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["e" /* ButtonsModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["f" /* CarouselModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["g" /* CollapseModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["c" /* BsDatepickerModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["d" /* BsDropdownModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["h" /* ModalModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["i" /* PaginationModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["j" /* PopoverModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["k" /* ProgressbarModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["l" /* RatingModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["m" /* SortableModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["n" /* TabsModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["o" /* TimepickerModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["p" /* TooltipModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_5_ngx_bootstrap__["q" /* TypeaheadModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["a" /* AccordionModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["b" /* AlertModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["e" /* ButtonsModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["f" /* CarouselModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["g" /* CollapseModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["c" /* BsDatepickerModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["d" /* BsDropdownModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["h" /* ModalModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["i" /* PaginationModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["j" /* PopoverModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["k" /* ProgressbarModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["l" /* RatingModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["m" /* SortableModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["n" /* TabsModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["o" /* TimepickerModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["p" /* TooltipModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_6_ngx_bootstrap__["q" /* TypeaheadModule */].forRoot(),
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -319,7 +322,7 @@ module.exports = "/* Top of page - Header/Hero's Image */\n.header-section {\n  
 /***/ "./src/app/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<!-- Hero's Image -->\n<div class=\"header-section\">\n  <div class=\"header-section-text\">\n    <h1><span>Prospective Software Engineer</span></h1>\n    <span class = \"header-description\">BA in Computer Science - Class of 2019</span>\n    <a class = \"btn\" href=\"https://huynhtan97.github.io/Portfolio/assets/AnHuynhResume2018.pdf\"><b>Resume</b></a>\n  </div>\n</div>\n\n<!-- About me -->\n<div class = \"about-me\">\n  <h2>About Me</h2>\n  <div class = \"col-left\">\n    <!-- Personal pic of me here -->\n  </div>\n  <div class = \"col-right\">\n    <p>Hi! Thank you for visiting my website!</p>\n    <p>I'm currently a Senior in Computer Science (with minors in Applied Math and Electrical Engineering) at Wentworth\n      Institute of Technology in Boston, MA. I'm originally from West Hartford, CT and decided to move to the city\n      in order to meet new people and seek opportunities in the city.</p>\n    <p>I got into the field back in my Junior Year of high school where my first language was Visual Basic. From there, I have both\n      learned and gotten involved more within the field from attending hackathons, to self-teaching myself various languages like Javascript and PHP.</p>\n  </div>\n</div>\n\n<!-- Contact Me -->\n<div class = \"contact-section\">\n  <h2>Contact Me</h2>\n  <div class = \"social-container\">\n    <div class = \"col-1\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">local_phone</i>\n        <p> <span class = \"text-bold\">Phone Number:</span> <br/> +1 (860) 794-1274</p>\n      </div>\n      <div class =\"line1\">\n        <i class = \"material-icons\">mail_outline</i>\n        <p> <span class = \"text-bold\">Email:</span> <br/> <a href=\"mailto:\">huynha1@wit.edu</a></p>\n      </div>\n    </div>\n    <div class = \"col-2\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">account_circle</i>\n        <p> <span class = \"text-bold\">Linkedin:</span> <br/> <a href=\"https://www.linkedin.com/in/huynhan1/\">@huynha1</a></p>\n      </div>\n      <div class =\"line1\">\n        <i class = \"material-icons\">code</i>\n        <p> <span class = \"text-bold\">Github:</span> <br/> <a href=\"https://github.com/huynhtan97\">@huynhtan97</a></p>\n      </div>\n    </div>\n    <div class = \"col-3\">\n        <p><span class = \"text-bold\">Current City: </span></p>\n        <p>Boston, MA</p>\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<footer>\n  <div class = \"footer-text\">\n    <p> Made with <a class=\"brown-text\" href=\"https://angular.io/guide/quickstart\">Angular 5+</a>\n      and hosted on <a class=\"brown-text\" href=\"https://github.com/huynhtan97/huynhtan97.github.io\">Github</a> </p>\n  </div>\n</footer>\n"
+module.exports = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<!-- Hero's Image -->\n<div class=\"header-section\">\n  <div class=\"header-section-text\">\n    <h1><span>Prospective Software Engineer</span></h1>\n    <span class = \"header-description\">BA in Computer Science - Class of 2019</span>\n    <a class = \"btn\" href=\"https://huynhtan97.github.io/Portfolio/assets/AnHuynhResume2018.pdf\"><b>Resume</b></a>\n  </div>\n</div>\n\n<!-- About me -->\n<div class = \"about-me\">\n  <h2>About Me</h2>\n  <div class = \"col-left\">\n    <!-- Personal pic of me here -->\n  </div>\n  <div class = \"col-right\">\n    <p>Hi! Thank you for visiting my website!</p>\n    <p>I'm currently a Senior in Computer Science (with minors in Applied Math and Electrical Engineering) at Wentworth\n      Institute of Technology in Boston, MA. I'm originally from West Hartford, CT and decided to move to the city\n      in order to meet new people and seek opportunities in the city.</p>\n    <p>I got into the field back in my Junior Year of high school where my first language was Visual Basic. From there, I have both\n      learned and gotten involved more within the field from attending hackathons, to self-teaching myself various languages like Javascript and PHP.</p>\n    <p><b>To view my skills, projects, and achievements:</b> please click on the 3 dotted menu button in the toolbar.</p>\n  </div>\n</div>\n\n<!-- Contact Me -->\n<div class = \"contact-section\">\n  <h2>Contact Me</h2>\n  <div class = \"social-container\">\n    <div class = \"col-1\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">local_phone</i>\n        <p> <span class = \"text-bold\">Phone Number:</span> <br/> +1 (860) 794-1274</p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">mail_outline</i>\n        <p> <span class = \"text-bold\">Email:</span> <br/> <a href=\"mailto:\">huynha1@wit.edu</a></p>\n      </div>\n    </div>\n    <div class = \"col-2\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">account_circle</i>\n        <p> <span class = \"text-bold\">Linkedin:</span> <br/> <a href=\"https://www.linkedin.com/in/huynhan1/\">@huynha1</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">code</i>\n        <p> <span class = \"text-bold\">Github:</span> <br/> <a href=\"https://github.com/huynhtan97\">@huynhtan97</a></p>\n      </div>\n    </div>\n    <div class = \"col-3\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">location_on</i>\n        <p> <span class = \"text-bold\">Current City:</span> <br/> Boston, MA</p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">create</i>\n        <p> <span class = \"text-bold\">Medium:</span> <br/> <a href=\"https://medium.com/hackwitus/meet-an-2406e0d7540d\">An Huynh</a></p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<footer>\n  <div class = \"footer-text\">\n    <p> Made with <a class=\"brown-text\" href=\"https://angular.io/guide/quickstart\">Angular 5+</a>\n      and hosted on <a class=\"brown-text\" href=\"https://github.com/huynhtan97/huynhtan97.github.io\">Github</a> </p>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -505,14 +508,14 @@ var ProjectsComponent = /** @class */ (function () {
 /***/ "./src/app/skills/skills.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "/* Header on top of page */\n.header{\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n  padding-bottom: 10px;\n}\n.header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n.header h5{\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Each individal chip*/\nmat-chip {\n  max-width: 200px;\n}\nmat-chip:hover{\n  color: lightgray;\n  cursor: pointer;\n}\n.mat-tooltip {\n  color: #fff;\n  border-radius: 2px;\n  margin: 14px;\n  max-width: 250px;\n  padding-left: 8px;\n  padding-right: 8px;\n}\n\n\n"
 
 /***/ }),
 
 /***/ "./src/app/skills/skills.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  skills works!\n</p>\n"
+module.exports = "<div class = \"header\">\n  <h2>My Skills and Experiences</h2>\n  <h5>Hover over / click each chip for additional information</h5>\n</div>\n\n<!-- Mat-chip lists with tooltip to show how many years of experience I have with them -->\n<mat-chip-list>\n  <mat-chip *ngFor=\"let chip of languagesAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n    {{chip.skill}}\n  </mat-chip>\n</mat-chip-list>\n"
 
 /***/ }),
 
@@ -534,9 +537,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var SkillsComponent = /** @class */ (function () {
     function SkillsComponent() {
+        // To populate mat-chips
+        this.languagesAndColors = [
+            { skill: 'Java', years: '4+ years', color: 'accent' },
+            { skill: 'Javascript', years: '2+ years', color: 'primary' },
+            { skill: 'jQuery', years: '2+ years', color: 'accent' },
+            { skill: 'Python', years: '2+ years', color: 'warn' },
+            { skill: 'PHP', years: '1+ years', color: 'accent' },
+            { skill: 'HTML', years: '2+ years', color: 'primary' },
+            { skill: 'CSS/Sass/Bootstrap', years: '2+ years', color: 'accent' },
+            { skill: 'C', years: '1+ years', color: 'warn' },
+            { skill: 'C++', years: '3+ years', color: 'accent' },
+            { skill: 'Shell scripting', years: '1+ years', color: 'primary' },
+            { skill: 'Scala', years: '1+ years', color: 'accent' },
+            { skill: 'Ruby', years: '2+ years', color: 'warn' }
+        ];
+        this.frameworksAndColors = [
+            { skill: 'AngularJS', years: '2+ years', color: 'accent' },
+            { skill: 'Rails', years: '2+ years', color: 'primary' }
+        ];
+        this.softwareAndColors = [
+            { skill: 'AngularJS', years: '2+ years', color: 'accent' },
+            { skill: 'Rails', years: '2+ years', color: 'primary' },
+            { skill: 'AngularJS', years: '2+ years', color: 'accent' },
+            { skill: 'Rails', years: '2+ years', color: 'primary' },
+            { skill: 'AngularJS', years: '2+ years', color: 'accent' },
+            { skill: 'Rails', years: '2+ years', color: 'primary' }
+        ];
+        this.softskillsAndColor = [
+            { skill: 'Organization', from: '4+ years', color: 'accent' },
+            { skill: 'Teamwork', from: '4+ years', color: 'primary' },
+            { skill: 'Team leadership', from: '4+ years', color: 'accent' },
+            { skill: 'Warn', from: '4+ years', color: 'warn' },
+            { skill: 'none', from: '4+ years', color: 'accent' },
+            { skill: 'Primary', from: '4+ years', color: 'primary' },
+            { skill: 'Accent', from: '4+ years', color: 'accent' },
+            { skill: 'Warn', from: '4+ years', color: 'warn' },
+            { skill: 'none', from: '4+ years', color: 'accent' },
+            { skill: 'Primary', from: '4+ years', color: 'primary' },
+            { skill: 'Accent', from: '4+ years', color: 'accent' },
+            { skill: 'Warn', from: '4+ years', color: 'warn' }
+        ];
     }
-    SkillsComponent.prototype.ngOnInit = function () {
-    };
     SkillsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-skills',
