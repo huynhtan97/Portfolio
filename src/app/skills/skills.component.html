@@ -1,11 +1,52 @@
 <div class = "header">
   <h2>My Skills and Experiences</h2>
-  <h5>Hover over / click each chip for additional information</h5>
+  <h5>Hover over each chip for additional information</h5>
 </div>
+<div class = "body">
+  <!-- Mat-chip lists with tooltip to show additional info -->
+  <div class = "header">
+    <h4>Languages</h4>
+  </div>
+  <mat-chip-list>
+    <mat-chip *ngFor="let chip of languagesAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'
+      fxLayout="row wrap" fxLayoutAlign="flex-start">
+      {{chip.skill}}
+    </mat-chip>
+  </mat-chip-list>
 
-<!-- Mat-chip lists with tooltip to show how many years of experience I have with them -->
-<mat-chip-list>
-  <mat-chip *ngFor="let chip of languagesAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
-    {{chip.skill}}
-  </mat-chip>
-</mat-chip-list>
+  <div class = "header">
+    <h4>Tools</h4>
+  </div>
+  <mat-chip-list>
+    <mat-chip *ngFor="let chip of toolsAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+      {{chip.skill}}
+    </mat-chip>
+  </mat-chip-list>
+
+  <div class = "header">
+    <h4>Frameworks</h4>
+  </div>
+  <mat-chip-list>
+    <mat-chip *ngFor="let chip of frameworksAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+      {{chip.skill}}
+    </mat-chip>
+  </mat-chip-list>
+
+  <div class = "header">
+    <h4>Software</h4>
+  </div>
+  <mat-chip-list>
+    <mat-chip *ngFor="let chip of softwareAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+      {{chip.skill}}
+    </mat-chip>
+  </mat-chip-list>
+
+  <div class = "header">
+    <h4>Soft Skills</h4>
+  </div>
+  <mat-chip-list>
+    <mat-chip *ngFor="let chip of softskillsAndColor" selected [color]="chip.color" [matTooltip]="chip.from" matTooltipPosition='above'>
+      {{chip.skill}}
+    </mat-chip>
+  </mat-chip-list>
+</div>

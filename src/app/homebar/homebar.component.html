@@ -12,11 +12,11 @@
     <mat-sidenav #snav (click)="snav.toggle()" [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
-        <!-- Turn below into button for resume -->
-        <!-- <a mat-list-item href="../../assets/AnHuynhResume2018.pdf"> <b>Resume</b> </a> -->
         <a mat-list-item routerLink = "/Skills"> <b>Skills</b> </a>
         <a mat-list-item routerLink = "/Projects"> <b>Projects</b> </a>
         <a mat-list-item routerLink = "/Achievements"> <b>Achievements</b> </a>
+        <!-- Add information about Meetups I'm in, Hobbies, Interests, Hackathons I've been to ...-->
+        <a mat-list-item routerLink = ""> <b>Hobbies</b> </a>
       </mat-nav-list>
     </mat-sidenav>
     <router-outlet></router-outlet>
