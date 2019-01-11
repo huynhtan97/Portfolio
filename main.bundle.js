@@ -265,7 +265,7 @@ module.exports = "/* Overall toolbar */\n.homebar {\n  display: -webkit-box;\n  
 /***/ "./src/app/homebar/homebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Mobile/Tablet -->\n<div class=\"homebar\" [class.is-mobile]=\"mobileQuery.matches\">\n  <mat-toolbar color=\"primary\" class=\"homebar-toolbar\">\n    <button mat-icon-button (click)=\"snav.toggle()\">\n      <mat-icon style=\"font-size: 32px !important\">more_vert</mat-icon>\n    </button>\n    <h1 routerLink= \"\">An Huynh</h1>\n  </mat-toolbar>\n\n  <mat-sidenav-container class=\"sidenav-container\"\n                         [style.marginTop.px]=\"mobileQuery.matches ? 56 : 0\">\n    <mat-sidenav #snav (click)=\"snav.toggle()\" [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\n                 [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\n      <mat-nav-list>\n        <!-- Turn below into button for resume -->\n        <!-- <a mat-list-item href=\"../../assets/AnHuynhResume2018.pdf\"> <b>Resume</b> </a> -->\n        <a mat-list-item routerLink = \"/Skills\"> <b>Skills</b> </a>\n        <a mat-list-item routerLink = \"/Projects\"> <b>Projects</b> </a>\n        <a mat-list-item routerLink = \"/Achievements\"> <b>Achievements</b> </a>\n      </mat-nav-list>\n    </mat-sidenav>\n    <router-outlet></router-outlet>\n  </mat-sidenav-container>\n</div>\n\n"
+module.exports = "<!-- Mobile/Tablet -->\n<div class=\"homebar\" [class.is-mobile]=\"mobileQuery.matches\">\n  <mat-toolbar color=\"primary\" class=\"homebar-toolbar\">\n    <button mat-icon-button (click)=\"snav.toggle()\">\n      <mat-icon style=\"font-size: 32px !important\">more_vert</mat-icon>\n    </button>\n    <h1 routerLink= \"\">An Huynh</h1>\n  </mat-toolbar>\n\n  <mat-sidenav-container class=\"sidenav-container\"\n                         [style.marginTop.px]=\"mobileQuery.matches ? 56 : 0\">\n    <mat-sidenav #snav (click)=\"snav.toggle()\" [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\n                 [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\n      <mat-nav-list>\n        <a mat-list-item routerLink = \"/Skills\"> <b>Skills</b> </a>\n        <a mat-list-item routerLink = \"/Projects\"> <b>Projects</b> </a>\n        <a mat-list-item routerLink = \"/Achievements\"> <b>Achievements</b> </a>\n        <!-- Add information about Meetups I'm in, Hobbies, Interests, Hackathons I've been to ...-->\n        <a mat-list-item routerLink = \"\"> <b>Hobbies</b> </a>\n      </mat-nav-list>\n    </mat-sidenav>\n    <router-outlet></router-outlet>\n  </mat-sidenav-container>\n</div>\n\n"
 
 /***/ }),
 
@@ -322,7 +322,7 @@ module.exports = "/* Top of page - Header/Hero's Image */\n.header-section {\n  
 /***/ "./src/app/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<!-- Hero's Image -->\n<div class=\"header-section\">\n  <div class=\"header-section-text\">\n    <h1><span>Prospective Software Engineer</span></h1>\n    <span class = \"header-description\">BA in Computer Science - Class of 2019</span>\n    <a class = \"btn\" href=\"https://huynhtan97.github.io/Portfolio/assets/AnHuynhResume2018.pdf\"><b>Resume</b></a>\n  </div>\n</div>\n\n<!-- About me -->\n<div class = \"about-me\">\n  <h2>About Me</h2>\n  <div class = \"col-left\">\n    <!-- Personal pic of me here -->\n  </div>\n  <div class = \"col-right\">\n    <p>Hi! Thank you for visiting my website!</p>\n    <p>I'm currently a Senior in Computer Science (with minors in Applied Math and Electrical Engineering) at Wentworth\n      Institute of Technology in Boston, MA. I'm originally from West Hartford, CT and decided to move to the city\n      in order to meet new people and seek opportunities in the city.</p>\n    <p>I got into the field back in my Junior Year of high school where my first language was Visual Basic. From there, I have both\n      learned and gotten involved more within the field from attending hackathons, to self-teaching myself various languages like Javascript and PHP.</p>\n    <p><b>To view my skills, projects, and achievements:</b> please click on the 3 dotted menu button in the toolbar.</p>\n  </div>\n</div>\n\n<!-- Contact Me -->\n<div class = \"contact-section\">\n  <h2>Contact Me</h2>\n  <div class = \"social-container\">\n    <div class = \"col-1\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">local_phone</i>\n        <p> <span class = \"text-bold\">Phone Number:</span> <br/> +1 (860) 794-1274</p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">mail_outline</i>\n        <p> <span class = \"text-bold\">Email:</span> <br/> <a href=\"mailto:\">huynha1@wit.edu</a></p>\n      </div>\n    </div>\n    <div class = \"col-2\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">account_circle</i>\n        <p> <span class = \"text-bold\">Linkedin:</span> <br/> <a href=\"https://www.linkedin.com/in/huynhan1/\">@huynha1</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">code</i>\n        <p> <span class = \"text-bold\">Github:</span> <br/> <a href=\"https://github.com/huynhtan97\">@huynhtan97</a></p>\n      </div>\n    </div>\n    <div class = \"col-3\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">location_on</i>\n        <p> <span class = \"text-bold\">Current City:</span> <br/> Boston, MA</p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">create</i>\n        <p> <span class = \"text-bold\">Medium:</span> <br/> <a href=\"https://medium.com/hackwitus/meet-an-2406e0d7540d\">An Huynh</a></p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<footer>\n  <div class = \"footer-text\">\n    <p> Made with <a class=\"brown-text\" href=\"https://angular.io/guide/quickstart\">Angular 5+</a>\n      and hosted on <a class=\"brown-text\" href=\"https://github.com/huynhtan97/huynhtan97.github.io\">Github</a> </p>\n  </div>\n</footer>\n"
+module.exports = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<!-- Hero's Image -->\n<div class=\"header-section\">\n  <div class=\"header-section-text\">\n    <h1><span>Prospective Software Engineer</span></h1>\n    <span class = \"header-description\">BA in Computer Science - Class of 2019</span>\n    <a class = \"btn\" href=\"https://huynhtan97.github.io/Portfolio/assets/AnHuynhResume2018.pdf\"><b>Resume</b></a>\n  </div>\n</div>\n\n<!-- About me -->\n<div class = \"about-me\">\n  <h2>About Me</h2>\n  <div class = \"col-left\">\n    <!-- Personal pic of me here -->\n  </div>\n  <div class = \"col-right\">\n    <p>Hi! Thank you for visiting my website!</p>\n    <p>I'm currently a Senior in Computer Science (with minors in Applied Math and Electrical Engineering) at Wentworth\n      Institute of Technology in Boston, MA. I'm originally from West Hartford, CT and decided to move to the city\n      in order to meet new people and seek opportunities in the city.</p>\n    <p>I got into the field back in my Junior Year of high school where my first language was Visual Basic. From there, I have both\n      learned and gotten involved more within the field from attending hackathons, to self-teaching myself various languages like Javascript and PHP.</p>\n    <p><b>To view my skills, projects, achievements, and hobbies:</b> Please click on the 3 dotted menu button in the toolbar.</p>\n  </div>\n</div>\n\n<!-- Contact Me -->\n<div class = \"contact-section\">\n  <h2>Contact Me</h2>\n  <div class = \"social-container\">\n    <div class = \"col-1\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">local_phone</i>\n        <p> <span class = \"text-bold\">Phone Number:</span> <br/> +1 (860) 794-1274</p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">mail_outline</i>\n        <p> <span class = \"text-bold\">Email:</span> <br/> <a href=\"mailto:\">huynha1@wit.edu</a></p>\n      </div>\n    </div>\n    <div class = \"col-2\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">account_circle</i>\n        <p> <span class = \"text-bold\">Linkedin:</span> <br/> <a href=\"https://www.linkedin.com/in/huynhan1/\">@huynha1</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">code</i>\n        <p> <span class = \"text-bold\">Github:</span> <br/> <a href=\"https://github.com/huynhtan97\">@huynhtan97</a></p>\n      </div>\n    </div>\n    <div class = \"col-3\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">location_on</i>\n        <p> <span class = \"text-bold\">Current City:</span> <br/> Boston, MA</p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">create</i>\n        <p> <span class = \"text-bold\">Medium:</span> <br/> <a href=\"https://medium.com/hackwitus/meet-an-2406e0d7540d\">An Huynh</a></p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<footer>\n  <div class = \"footer-text\">\n    <p> Made with <a class=\"brown-text\" href=\"https://angular.io/guide/quickstart\">Angular 5+</a>\n      and hosted on <a class=\"brown-text\" href=\"https://github.com/huynhtan97/huynhtan97.github.io\">Github</a> </p>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -508,14 +508,14 @@ var ProjectsComponent = /** @class */ (function () {
 /***/ "./src/app/skills/skills.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* Header on top of page */\n.header{\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n  padding-bottom: 10px;\n}\n.header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n.header h5{\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Each individal chip*/\nmat-chip {\n  max-width: 200px;\n}\nmat-chip:hover{\n  color: lightgray;\n  cursor: pointer;\n}\n.mat-tooltip {\n  color: #fff;\n  border-radius: 2px;\n  margin: 14px;\n  max-width: 250px;\n  padding-left: 8px;\n  padding-right: 8px;\n}\n\n\n"
+module.exports = "/* Contains all the chips */\n.body{\n  padding: 0px 20px 20px 20px;\n}\n/* Header on top of page */\n.header{\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n}\n.header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n.header h5{\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  position: relative;\n}\n/* Each individal chip*/\nmat-chip {\n  max-width: 200px;\n}\nmat-chip:hover{\n  color: lightgray;\n  cursor: pointer;\n  /* Got from MaterializeCSS */\n  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);\n          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);\n}\n.mat-tooltip {\n  color: #fff;\n  border-radius: 2px;\n  margin: 14px;\n  max-width: 250px;\n  padding-left: 8px;\n  padding-right: 8px;\n}\n\n\n"
 
 /***/ }),
 
 /***/ "./src/app/skills/skills.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"header\">\n  <h2>My Skills and Experiences</h2>\n  <h5>Hover over / click each chip for additional information</h5>\n</div>\n\n<!-- Mat-chip lists with tooltip to show how many years of experience I have with them -->\n<mat-chip-list>\n  <mat-chip *ngFor=\"let chip of languagesAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n    {{chip.skill}}\n  </mat-chip>\n</mat-chip-list>\n"
+module.exports = "<div class = \"header\">\n  <h2>My Skills and Experiences</h2>\n  <h5>Hover over each chip for additional information</h5>\n</div>\n<div class = \"body\">\n  <!-- Mat-chip lists with tooltip to show additional info -->\n  <div class = \"header\">\n    <h4>Languages</h4>\n  </div>\n  <mat-chip-list>\n    <mat-chip *ngFor=\"let chip of languagesAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'\n      fxLayout=\"row wrap\" fxLayoutAlign=\"flex-start\">\n      {{chip.skill}}\n    </mat-chip>\n  </mat-chip-list>\n\n  <div class = \"header\">\n    <h4>Tools</h4>\n  </div>\n  <mat-chip-list>\n    <mat-chip *ngFor=\"let chip of toolsAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n      {{chip.skill}}\n    </mat-chip>\n  </mat-chip-list>\n\n  <div class = \"header\">\n    <h4>Frameworks</h4>\n  </div>\n  <mat-chip-list>\n    <mat-chip *ngFor=\"let chip of frameworksAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n      {{chip.skill}}\n    </mat-chip>\n  </mat-chip-list>\n\n  <div class = \"header\">\n    <h4>Software</h4>\n  </div>\n  <mat-chip-list>\n    <mat-chip *ngFor=\"let chip of softwareAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n      {{chip.skill}}\n    </mat-chip>\n  </mat-chip-list>\n\n  <div class = \"header\">\n    <h4>Soft Skills</h4>\n  </div>\n  <mat-chip-list>\n    <mat-chip *ngFor=\"let chip of softskillsAndColor\" selected [color]=\"chip.color\" [matTooltip]=\"chip.from\" matTooltipPosition='above'>\n      {{chip.skill}}\n    </mat-chip>\n  </mat-chip-list>\n</div>\n"
 
 /***/ }),
 
@@ -537,46 +537,67 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var SkillsComponent = /** @class */ (function () {
     function SkillsComponent() {
-        // To populate mat-chips
+        /**
+         * @type {TechSkills[]}
+         * @memberof SkillsComponent
+         * if years >= 3, then color = warn
+         * if years == 2, then color = accent
+         * if years < 2, then color = primary
+         */
         this.languagesAndColors = [
-            { skill: 'Java', years: '4+ years', color: 'accent' },
-            { skill: 'Javascript', years: '2+ years', color: 'primary' },
-            { skill: 'jQuery', years: '2+ years', color: 'accent' },
-            { skill: 'Python', years: '2+ years', color: 'warn' },
-            { skill: 'PHP', years: '1+ years', color: 'accent' },
-            { skill: 'HTML', years: '2+ years', color: 'primary' },
-            { skill: 'CSS/Sass/Bootstrap', years: '2+ years', color: 'accent' },
-            { skill: 'C', years: '1+ years', color: 'warn' },
-            { skill: 'C++', years: '3+ years', color: 'accent' },
+            { skill: 'Java', years: '4+ years', color: 'warn' },
+            { skill: 'Javascript', years: '3+ years', color: 'warn' },
+            { skill: 'jQuery', years: '1+ years', color: 'primary' },
+            { skill: 'Python', years: '2+ years', color: 'accent' },
+            { skill: 'PHP', years: '1+ years', color: 'primary' },
+            { skill: 'HTML', years: '3+ years', color: 'warn' },
+            { skill: 'CSS/Sass/Bootstrap', years: '3+ years', color: 'warn' },
+            { skill: 'C', years: '1+ years', color: 'primary' },
+            { skill: 'C++', years: '1+ years', color: 'primary' },
             { skill: 'Shell scripting', years: '1+ years', color: 'primary' },
-            { skill: 'Scala', years: '1+ years', color: 'accent' },
-            { skill: 'Ruby', years: '2+ years', color: 'warn' }
+            { skill: 'Scala', years: '1+ years', color: 'primary' },
+            { skill: 'Ruby', years: '2+ years', color: 'accent' },
+            { skill: 'Matlab', years: '2+ years', color: 'accent' },
+            { skill: 'Markdown', years: '3+ years', color: 'warn' },
+            { skill: 'LaTeX', years: '1+ years', color: 'primary' },
+        ];
+        this.toolsAndColors = [
+            { skill: 'AWS', years: '2+ years', color: 'accent' },
+            { skill: 'Google Cloud', years: '1+ years', color: 'primary' },
+            { skill: 'IBM Cloud', years: '1+ years', color: 'primary' }
         ];
         this.frameworksAndColors = [
             { skill: 'AngularJS', years: '2+ years', color: 'accent' },
-            { skill: 'Rails', years: '2+ years', color: 'primary' }
+            { skill: 'Rails', years: '2+ years', color: 'accent' }
         ];
         this.softwareAndColors = [
-            { skill: 'AngularJS', years: '2+ years', color: 'accent' },
+            { skill: 'Microsoft Office', years: '8+ years', color: 'warn' },
             { skill: 'Rails', years: '2+ years', color: 'primary' },
             { skill: 'AngularJS', years: '2+ years', color: 'accent' },
             { skill: 'Rails', years: '2+ years', color: 'primary' },
             { skill: 'AngularJS', years: '2+ years', color: 'accent' },
             { skill: 'Rails', years: '2+ years', color: 'primary' }
         ];
+        /**
+         * @type {SoftSkills[]}
+         * @memberof SkillsComponent
+         * if from == Internships, then color = warn
+         * if from == School Clubs, then color = accent
+         * if from == (Anything else), then color = primary
+         */
         this.softskillsAndColor = [
-            { skill: 'Organization', from: '4+ years', color: 'accent' },
-            { skill: 'Teamwork', from: '4+ years', color: 'primary' },
-            { skill: 'Team leadership', from: '4+ years', color: 'accent' },
-            { skill: 'Warn', from: '4+ years', color: 'warn' },
-            { skill: 'none', from: '4+ years', color: 'accent' },
-            { skill: 'Primary', from: '4+ years', color: 'primary' },
-            { skill: 'Accent', from: '4+ years', color: 'accent' },
-            { skill: 'Warn', from: '4+ years', color: 'warn' },
-            { skill: 'none', from: '4+ years', color: 'accent' },
-            { skill: 'Primary', from: '4+ years', color: 'primary' },
-            { skill: 'Accent', from: '4+ years', color: 'accent' },
-            { skill: 'Warn', from: '4+ years', color: 'warn' }
+            { skill: 'Organization', from: 'School', color: 'primary' },
+            { skill: 'Teamwork', from: 'School Clubs', color: 'accent' },
+            { skill: 'Team Leadership', from: 'School Clubs', color: 'accent' },
+            { skill: 'Public Speaking', from: 'Self-taught', color: 'primary' },
+            { skill: 'Communication', from: 'School+Internships', color: 'warn' },
+            { skill: 'Accountability', from: 'School Clubs+Internships', color: 'warn' },
+            { skill: 'Time Management', from: 'School Clubs', color: 'accent' },
+            { skill: 'Listening', from: 'School', color: 'primary' },
+            { skill: 'Adaptability', from: 'School Clubs+Internships', color: 'warn' },
+            { skill: 'Quick Learner', from: 'Internships', color: 'primary' },
+            { skill: 'Problem-Solving', from: 'School Clubs+Internships', color: 'warn' },
+            { skill: 'Self-Motivation', from: 'School', color: 'primary' }
         ];
     }
     SkillsComponent = __decorate([
