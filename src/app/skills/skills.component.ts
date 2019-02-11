@@ -31,6 +31,7 @@ export class SkillsComponent {
   languagesAndColors: TechSkills[] = [
     {skill: 'Java', years: '4+ years', color: 'warn'},
     {skill: 'Javascript', years: '3+ years', color: 'warn'},
+    {skill: 'Typescript', years: '2+ years', color: 'accent'},
     {skill: 'jQuery', years: '1+ years', color: 'primary'},
     {skill: 'Python', years: '2+ years', color: 'accent'},
     {skill: 'PHP', years: '1+ years', color: 'primary'},
@@ -44,26 +45,35 @@ export class SkillsComponent {
     {skill: 'Matlab', years: '2+ years', color: 'accent'},
     {skill: 'Markdown', years: '3+ years', color: 'warn'},
     {skill: 'LaTeX', years: '1+ years', color: 'primary'},
+    {skill: 'R', years: '1+ years', color: 'primary'},
+    {skill: 'SQL', years: '3+ years', color: 'warn'},
   ];
 
   toolsAndColors: TechSkills[] = [
     {skill: 'AWS', years: '2+ years', color: 'accent'},
-    {skill: 'Google Cloud', years: '1+ years', color: 'primary'},
+    {skill: 'Google Cloud Platform', years: '1+ years', color: 'primary'},
     {skill: 'IBM Cloud', years: '1+ years', color: 'primary'}
   ];
 
   frameworksAndColors: TechSkills[] = [
     {skill: 'AngularJS', years: '2+ years', color: 'accent'},
-    {skill: 'Rails', years: '2+ years', color: 'accent'}
+    {skill: 'Rails', years: '2+ years', color: 'accent'},
+    {skill: 'React', years: '1+ years', color: 'primary'},
   ];
 
   softwareAndColors: TechSkills[] = [
+    {skill: 'Android Studio', years: '2+ years', color: 'primary'},
+    {skill: 'XCode', years: '2+ years', color: 'accent'},
+    {skill: 'Rails', years: '2+ years', color: 'accent'},
+    {skill: 'MySQL', years: '3+ years', color: 'warn'},
+    {skill: 'MongoDB', years: '2+ years', color: 'accent'},
+    {skill: 'Microsoft SQL Server', years: '2+ years', color: 'accent'},
+    {skill: 'Github', years: '4+ years', color: 'warn'},
+    {skill: 'Heroku', years: '2+ years', color: 'accent'},
+    {skill: 'Spring Tool Suite', years: '2+ years', color: 'accent'},
+    {skill: 'ServiceNow', years: '1+ years', color: 'primary'},
+    {skill: 'Unity', years: '3+ years', color: 'warn'},
     {skill: 'Microsoft Office', years: '8+ years', color: 'warn'},
-    {skill: 'Rails', years: '2+ years', color: 'primary'},
-    {skill: 'AngularJS', years: '2+ years', color: 'accent'},
-    {skill: 'Rails', years: '2+ years', color: 'primary'},
-    {skill: 'AngularJS', years: '2+ years', color: 'accent'},
-    {skill: 'Rails', years: '2+ years', color: 'primary'}
   ];
 
   /**

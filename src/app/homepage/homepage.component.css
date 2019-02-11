@@ -51,14 +51,14 @@
 }
 
 .btn:hover{
-  opacity: .80;
+  background: #80b1b3;
 }
 
 /* About me AND Contact me*/
 .about-me, .contact-section {
   width: 100%; /* width of parent element*/
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .about-me:after, .contact-section :after { /* Fixing issue with col-left and col-right not being "contained" inside main class */
@@ -152,6 +152,10 @@
 .col-3 p{
   margin-bottom: 0;
   margin-top: 7px;
+}
+
+.line2 {
+  padding-top: 10px;
 }
 
 .text-bold{
