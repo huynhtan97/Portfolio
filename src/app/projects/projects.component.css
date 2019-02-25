@@ -1,0 +1,35 @@
+.header:after{
+  content: '';
+  display:block;
+  clear: both;
+}
+
+.header h2 {
+  color: #666666;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Creating the "section" line */
+.header h2:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #666666;
+}
+
+/* For the cards */
+.cards {
+  padding: 30px;
+  margin-bottom: 16px;
+}
+
+mat-card {
+  margin: 15px;
+}

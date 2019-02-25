@@ -39,11 +39,18 @@
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  margin-bottom: 20px;
 }
 
-/* Each individal chip*/
+/* mat-card containing chip list */
+mat-card {
+  margin: 15px;
+}
+
+/* Chip List with skills */
 mat-chip {
   max-width: 200px;
+  margin: 10px;
 }
 mat-chip:hover{
   color: lightgray;
@@ -53,11 +60,8 @@ mat-chip:hover{
 }
 .mat-tooltip {
   color: #fff;
-  border-radius: 2px;
-  margin: 14px;
   max-width: 250px;
   padding-left: 8px;
   padding-right: 8px;
 }
-
 

@@ -2,51 +2,67 @@
   <h2>My Skills and Experiences</h2>
   <h5>Hover over each chip for additional information</h5>
 </div>
+
+<!-- Move each card, chip list, and header into its own directive? -->
+
 <div class = "body">
-  <!-- Mat-chip lists with tooltip to show additional info -->
-  <div class = "header">
-    <h4>Languages</h4>
-  </div>
-  <mat-chip-list>
-    <mat-chip *ngFor="let chip of languagesAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'
-      fxLayout="row wrap" fxLayoutAlign="flex-start">
-      {{chip.skill}}
-    </mat-chip>
-  </mat-chip-list>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h4>Languages</h4></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-chip-list>
+      <mat-chip *ngFor="let chip of languagesAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+        {{chip.skill}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card>
 
-  <div class = "header">
-    <h4>Tools/Services</h4>
-  </div>
-  <mat-chip-list>
-    <mat-chip *ngFor="let chip of toolsAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
-      {{chip.skill}}
-    </mat-chip>
-  </mat-chip-list>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h4>Tools/Services</h4></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-chip-list>
+      <mat-chip *ngFor="let chip of toolsAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+        {{chip.skill}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card>
 
-  <div class = "header">
-    <h4>Frameworks</h4>
-  </div>
-  <mat-chip-list>
-    <mat-chip *ngFor="let chip of frameworksAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
-      {{chip.skill}}
-    </mat-chip>
-  </mat-chip-list>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h4>Frameworks</h4></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-chip-list>
+      <mat-chip *ngFor="let chip of frameworksAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+        {{chip.skill}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card>
 
-  <div class = "header">
-    <h4>Software</h4>
-  </div>
-  <mat-chip-list>
-    <mat-chip *ngFor="let chip of softwareAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
-      {{chip.skill}}
-    </mat-chip>
-  </mat-chip-list>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h4>Software</h4></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-chip-list>
+      <mat-chip *ngFor="let chip of softwareAndColors" selected [color]="chip.color" [matTooltip]="chip.years" matTooltipPosition='above'>
+        {{chip.skill}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card>
 
-  <div class = "header">
-    <h4>Soft Skills</h4>
-  </div>
-  <mat-chip-list>
-    <mat-chip *ngFor="let chip of softskillsAndColor" selected [color]="chip.color" [matTooltip]="chip.from" matTooltipPosition='above'>
-      {{chip.skill}}
-    </mat-chip>
-  </mat-chip-list>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h4>Soft Skills</h4></mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-chip-list>
+      <mat-chip *ngFor="let chip of softskillsAndColor" selected [color]="chip.color" [matTooltip]="chip.from" matTooltipPosition='above'>
+        {{chip.skill}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card>
 </div>
