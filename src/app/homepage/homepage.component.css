@@ -45,13 +45,13 @@
   padding: 10px 24px;
   font-size: 20px;
   text-decoration: none;
-  background: #aaa1a1;
+  background: #ff6f00;
   border-radius: 10px;
   transition: 0.3s all;
 }
 
 .btn:hover{
-  background: #80b1b3;
+  background: #546e7a;
 }
 
 /* About me AND Contact me*/
@@ -135,7 +135,7 @@
   margin-top: 17px;
   margin-right: 20px;
   font-size: 24px;
-  color: indigo;
+  color: #0B172A;
 }
 
 .col-1, .col-2, .col-3 {
@@ -175,7 +175,8 @@
 
 /* Footer */
 footer{
-  background-color: #d8d4db;
+  background-color: #546e7a;
+  color: white;
   width: 100%;
   padding: 10px 0px;
 }
@@ -195,7 +196,7 @@ footer:after {
   margin-bottom: 0;
 }
 
-.brown-text{
-  color: brown;
+.link-text{
+  color: #ff6f00;
   font-weight: bold;
 }

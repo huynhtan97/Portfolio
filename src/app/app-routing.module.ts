@@ -5,6 +5,7 @@ import { HomepageComponent } from '../app/homepage/homepage.component';
 import { SkillsComponent } from '../app/skills/skills.component';
 import { ProjectsComponent } from '../app/projects/projects.component';
 import { AchievementsComponent } from '../app/achievements/achievements.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
 // Specify paths here
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'Skills', component: SkillsComponent },
   { path: 'Projects', component: ProjectsComponent },
   { path: 'Achievements', component: AchievementsComponent },
+  { path: 'WorkExperience', component: WorkExperienceComponent},
 ];
 
 @NgModule({

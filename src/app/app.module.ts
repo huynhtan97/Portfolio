@@ -20,6 +20,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     SkillsComponent,
     ProjectsComponent,
     AchievementsComponent,
-    HomepageComponent
+    HomepageComponent,
+    WorkExperienceComponent
   ],
   imports: [
     AppRoutingModule,

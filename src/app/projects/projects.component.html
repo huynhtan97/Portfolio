@@ -2,7 +2,46 @@
   <h2>Highlighted Projects</h2>
 </div>
 
-<!--
+<!-- Using grid tiles -->
+<div class="tiles">
+  <mat-grid-list cols="2" rowHeight="2:1" style="margin: 20px;">
+    <mat-grid-tile colspan="1">
+      <div class="container" style="color:black;">
+        <a href="https://github.com/huynhtan97/sheFightsBack">
+          <img src="../../assets/images/sheFightsBack.png" alt="shefightsback" style="width:100%;">
+        </a>
+        <div class="centered">SheFightsBack</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1">
+      <div class="container" style="color:red;">
+        <a href="https://github.com/huynhtan97/nodeRedFaceRecognition">
+          <img src="../../assets/images/imageRecognitionApp.png" alt="shefightsback" style="width:100%;">
+        </a>
+        <div class="centered">IBM Cloud Image Recognition</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1">
+      <div class="container" style="color:black;">
+        <a href="https://github.com/huynhtan97/mood-bot">
+          <img src="../../assets/images/chatBotApp.jpg" alt="shefightsback" style="width:100%;">
+        </a>
+        <div class="centered">IBM Cloud Chat bot</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1">
+      <div class="container" style="color:yellow;">
+        <a href="https://github.com/huynhtan97/sheFightsBack">
+          <img src="../../assets/images/sugARPokeApp.jpg" alt="shefightsback" style="width:100%;">
+        </a>
+        <div class="centered">sugAR Poke</div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
+<!-- Using cards
 <div class="cards" fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="10px" fxLayoutAlign="center">
   <div fxLayout.gt-md="row" fxLayout.lt-sm="column"  fxLayoutGap="10px" fxFlex="100"  fxFlex.gt-md="50">
     <div fxFlex.lt-lg="50" fxFlex.lt-sm="100" ><mat-card>1</mat-card></div>
@@ -14,11 +53,11 @@
   </div>
 </div>
 -->
-<!-- Keep cards in a row until width < 959px -->
+<!-- Keep cards in a row until width < 959px
 <div class="cards" fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="10px" fxLayoutAlign="center">
-  <!--Move all cards to one column if width < 1279px -->
+  <!--Move all cards to one column if width < 1279px
   <div fxLayout.lt-lg="column" fxLayoutGap="20px" fxFlex="90">
-    <!-- Keep cards in grid and not overlap eachother -->
+    <!-- Keep cards in grid and not overlap eachother
     <div fxFlex.lt-lg="50" fxFlex.lt-sm="100">
       <mat-card>
         <mat-card-header>
@@ -92,4 +131,6 @@
     </div>
 
   </div>
-</div>
+</div> -->
+
+

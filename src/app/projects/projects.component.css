@@ -24,7 +24,8 @@
   background-color: #666666;
 }
 
-/* For the cards */
+
+/* For the cards
 .cards {
   padding: 30px;
   margin-bottom: 16px;
@@ -32,4 +33,41 @@
 
 mat-card {
   margin: 15px;
+}
+*/
+
+/* For grid tiles */
+mat-grid-tile:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
 }
