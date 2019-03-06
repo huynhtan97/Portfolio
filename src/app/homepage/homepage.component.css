@@ -40,7 +40,7 @@
   text-shadow: 0 0 10px black;
 }
 
-.btn{
+.resumeBtn{
   color: white;
   padding: 10px 24px;
   font-size: 20px;
@@ -50,7 +50,17 @@
   transition: 0.3s all;
 }
 
-.btn:hover{
+.reactBtn{
+  color: white;
+  padding: 10px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  background: #2a99e2;
+  border-radius: 10px;
+  transition: 0.3s all;
+}
+
+.resumeBtn:hover, .reactBtn:hover{
   background: #546e7a;
 }
 
@@ -61,7 +71,7 @@
   padding-bottom: 30px;
 }
 
-.about-me:after, .contact-section :after { /* Fixing issue with col-left and col-right not being "contained" inside main class */
+.about-me:after, .contact-section:after { /* Fixing issue with col-left and col-right not being "contained" inside main class */
   content: '';
   display:block;
   clear: both;

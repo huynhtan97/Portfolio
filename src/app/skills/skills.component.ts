@@ -73,6 +73,7 @@ export class SkillsComponent {
     {skill: 'ServiceNow', years: '1+ years', color: 'warn'},
     {skill: 'Unity', years: '3+ years', color: 'primary'},
     {skill: 'Microsoft Office', years: '8+ years', color: 'primary'},
+    {skill: 'VMWare', years: '1+ years', color: 'warn'},
   ];
 
   /**

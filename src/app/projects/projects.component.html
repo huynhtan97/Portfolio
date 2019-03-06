@@ -1,136 +1,18 @@
 <div class = "header">
   <h2>Highlighted Projects</h2>
+  <h5>Click on each box to redirect to project's github repository</h5>
 </div>
 
-<!-- Using grid tiles -->
-<div class="tiles">
-  <mat-grid-list cols="2" rowHeight="2:1" style="margin: 20px;">
-    <mat-grid-tile colspan="1">
-      <div class="container" style="color:black;">
-        <a href="https://github.com/huynhtan97/sheFightsBack">
-          <img src="../../assets/images/sheFightsBack.png" alt="shefightsback" style="width:100%;">
-        </a>
-        <div class="centered">SheFightsBack</div>
-      </div>
+<mat-card class="sub-category-grid"  (window:resize)="onResize($event)">
+  <mat-grid-list cols="{{numOfCols}}" rowHeight="2:1">
+     <mat-grid-tile *ngFor="let item of Projects">
+        <div class="container">
+          <a href={{item.link}}>
+            <img src="{{item.img_src}}" alt="{{item.alt}}" style="width:100%;">
+          </a>
+          <div class="centered">{{item.title}}</div>
+        </div>
     </mat-grid-tile>
-    <mat-grid-tile colspan="1">
-      <div class="container" style="color:red;">
-        <a href="https://github.com/huynhtan97/nodeRedFaceRecognition">
-          <img src="../../assets/images/imageRecognitionApp.png" alt="shefightsback" style="width:100%;">
-        </a>
-        <div class="centered">IBM Cloud Image Recognition</div>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="1">
-      <div class="container" style="color:black;">
-        <a href="https://github.com/huynhtan97/mood-bot">
-          <img src="../../assets/images/chatBotApp.jpg" alt="shefightsback" style="width:100%;">
-        </a>
-        <div class="centered">IBM Cloud Chat bot</div>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="1">
-      <div class="container" style="color:yellow;">
-        <a href="https://github.com/huynhtan97/sheFightsBack">
-          <img src="../../assets/images/sugARPokeApp.jpg" alt="shefightsback" style="width:100%;">
-        </a>
-        <div class="centered">sugAR Poke</div>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
-</div>
-
-
-<!-- Using cards
-<div class="cards" fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="10px" fxLayoutAlign="center">
-  <div fxLayout.gt-md="row" fxLayout.lt-sm="column"  fxLayoutGap="10px" fxFlex="100"  fxFlex.gt-md="50">
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100" ><mat-card>1</mat-card></div>
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100" ><mat-card>2</mat-card></div>
-  </div>
-  <div fxLayout.gt-md="row" fxLayout.lt-sm="column" fxLayoutGap="10px" fxFlex="100"   fxFlex.gt-md="50">
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100" ><mat-card>3</mat-card></div>
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100" ><mat-card>4</mat-card></div>
-  </div>
-</div>
--->
-<!-- Keep cards in a row until width < 959px
-<div class="cards" fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="10px" fxLayoutAlign="center">
-  <!--Move all cards to one column if width < 1279px
-  <div fxLayout.lt-lg="column" fxLayoutGap="20px" fxFlex="90">
-    <!-- Keep cards in grid and not overlap eachother
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title><h4>shefightsback</h4></mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png" alt="shefightsback" style="max-height: 300px">
-        <mat-card-content>
-          <p>
-            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of
-            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a mat-button href="https://github.com/huynhtan97/sheFightsBack">View Github</a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title><h4>shefightsback</h4></mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png" alt="shefightsback" style="max-height: 300px">
-        <mat-card-content>
-          <p>
-            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of
-            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a mat-button href="https://github.com/huynhtan97/sheFightsBack">View Github</a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-  </div>
-
-  <div fxLayout.lt-lg="column" fxLayoutGap="20px" fxFlex="90">
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100">
-     <mat-card>
-        <mat-card-header>
-          <mat-card-title><h4>shefightsback</h4></mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png" alt="shefightsback" style="max-height: 300px">
-        <mat-card-content>
-          <p>
-            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of
-            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a mat-button href="https://github.com/huynhtan97/sheFightsBack">View Github</a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div fxFlex.lt-lg="50" fxFlex.lt-sm="100">
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title><h4>shefightsback</h4></mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png" alt="shefightsback" style="max-height: 300px">
-        <mat-card-content>
-          <p>
-            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of
-            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <a mat-button href="https://github.com/huynhtan97/sheFightsBack">View Github</a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-
-  </div>
-</div> -->
-
+ </mat-grid-list>
+</mat-card>
 
