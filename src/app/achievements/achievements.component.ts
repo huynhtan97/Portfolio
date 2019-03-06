@@ -65,7 +65,8 @@ export class AchievementsComponent implements OnInit {
       label: 'Community Standards Board',
       role: 'Council Member',
       date: 'April 2018',
-      description: `Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM`,
+      description: `Passed interview and leadership elimination round to become elected Community Standards Board member.
+                    Purpose of board is to enforce school's code of conduct.`,
     },
     {
       label: 'HackWITUs 3',
