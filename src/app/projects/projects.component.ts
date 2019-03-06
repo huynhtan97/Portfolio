@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-
+export interface BoxItem {
+  title: String;
+  img_src: String;
+  alt: String;
+  link: String;
+}
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -10,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   // Initial value with the default number of columns
   numOfCols: any = 2;
 
-  Projects: any = [
+  Projects: BoxItem[] = [
       {
         title: 'SheFightsBack',
         img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png',
@@ -19,23 +24,23 @@ export class ProjectsComponent implements OnInit {
       },
       {
         title: 'IBM Cloud Image Recognition',
-        img_src: '../../assets/images/imageRecognitionApp.png',
+        img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/imageRecognitionApp.png',
         alt: 'imageRecognition',
         link: 'https://github.com/huynhtan97/nodeRedFaceRecognition'
       },
       {
         title: 'IBM AI Chatbot',
-        img_src: '../../assets/images/chatBotApp.jpg',
+        img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/chatBotApp.jpg',
         alt: 'AIChatbot',
         link: 'https://github.com/huynhtan97/mood-bot',
       },
       {
         title: 'Everlead',
-        img_src: '../../assets/images/everlead.png',
+        img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/everlead.png',
         alt: 'everlead',
         link: 'https://github.com/huynhtan97/Everlead',
       },
-    ]
+  ];
 
   constructor() { }
 

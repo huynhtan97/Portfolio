@@ -1,52 +1,20 @@
-<mat-vertical-stepper>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="HackWITUs">
-    <h4>Head of Finance for HackWITUs</h4>
-    <h5>March 2017</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-  <mat-step label="CSS">
-    <h4>Treasurer of CSS</h4>
-    <h5>September 2016</h5>
-    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>
-  </mat-step>
-</mat-vertical-stepper>
+<div class = "header">
+  <h2>Achievements</h2>
+  <h5>Click on each row to see more information</h5>
+</div>
+
+<div fxLayoutAlign="center center" fxLayout="column">
+  <mat-vertical-stepper>
+    <!-- change default mat-step 'edit' icon -->
+    <ng-template matStepperIcon="edit">
+      <mat-icon>bubble_chart</mat-icon>
+    </ng-template>
+    <mat-step *ngFor="let item of Achievements; let i= index;" [label]="item.label">
+      <div class="stepText">
+        <h4>{{item.role}}</h4>
+        <h5>{{item.date}}</h5>
+        <h6>{{item.description}}</h6>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
