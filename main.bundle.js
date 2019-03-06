@@ -27,7 +27,7 @@ module.exports = ""
 /***/ "./src/app/achievements/achievements.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  achievements page still under work\n</p>\n"
+module.exports = "<mat-vertical-stepper>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"HackWITUs\">\n    <h4>Head of Finance for HackWITUs</h4>\n    <h5>March 2017</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n</mat-vertical-stepper>\n"
 
 /***/ }),
 
@@ -78,6 +78,7 @@ var AchievementsComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_skills_skills_component__ = __webpack_require__("./src/app/skills/skills.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_achievements_achievements_component__ = __webpack_require__("./src/app/achievements/achievements.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__work_experience_work_experience_component__ = __webpack_require__("./src/app/work-experience/work-experience.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -91,12 +92,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 // Specify paths here
 var routes = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_2__app_homepage_homepage_component__["a" /* HomepageComponent */], pathMatch: 'full' },
     { path: 'Skills', component: __WEBPACK_IMPORTED_MODULE_3__app_skills_skills_component__["a" /* SkillsComponent */] },
     { path: 'Projects', component: __WEBPACK_IMPORTED_MODULE_4__app_projects_projects_component__["a" /* ProjectsComponent */] },
     { path: 'Achievements', component: __WEBPACK_IMPORTED_MODULE_5__app_achievements_achievements_component__["a" /* AchievementsComponent */] },
+    { path: 'WorkExperience', component: __WEBPACK_IMPORTED_MODULE_6__work_experience_work_experience_component__["a" /* WorkExperienceComponent */] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -183,6 +186,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__achievements_achievements_component__ = __webpack_require__("./src/app/achievements/achievements.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__homepage_homepage_component__ = __webpack_require__("./src/app/homepage/homepage.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__work_experience_work_experience_component__ = __webpack_require__("./src/app/work-experience/work-experience.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -207,6 +211,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -218,7 +223,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_9__skills_skills_component__["a" /* SkillsComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__projects_projects_component__["a" /* ProjectsComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__achievements_achievements_component__["a" /* AchievementsComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__homepage_homepage_component__["a" /* HomepageComponent */]
+                __WEBPACK_IMPORTED_MODULE_12__homepage_homepage_component__["a" /* HomepageComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__work_experience_work_experience_component__["a" /* WorkExperienceComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */],
@@ -248,7 +254,7 @@ module.exports = "/* Overall toolbar */\n.homebar {\n  display: -webkit-box;\n  
 /***/ "./src/app/homebar/homebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Mobile/Tablet -->\n<div class=\"homebar\" [class.is-mobile]=\"mobileQuery.matches\">\n  <mat-toolbar color=\"primary\" class=\"homebar-toolbar\">\n    <button mat-icon-button (click)=\"snav.toggle()\">\n      <mat-icon style=\"font-size: 32px !important\">more_vert</mat-icon>\n    </button>\n    <h1 routerLink= \"\">An Huynh</h1>\n  </mat-toolbar>\n\n  <mat-sidenav-container class=\"sidenav-container\"\n                         [style.marginTop.px]=\"mobileQuery.matches ? 56 : 0\">\n    <mat-sidenav #snav (click)=\"snav.toggle()\" [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\n                 [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\n      <mat-nav-list>\n        <a mat-list-item routerLink = \"/Skills\"> <b>Skills</b> </a>\n        <a mat-list-item routerLink = \"/Projects\"> <b>Projects</b> </a>\n        <a mat-list-item routerLink = \"/Achievements\"> <b>Achievements</b> </a>\n        <!-- Add information about Meetups I'm in, Hobbies, Interests, Hackathons I've been to ...-->\n        <a mat-list-item routerLink = \"\"> <b>Hobbies</b> </a>\n      </mat-nav-list>\n    </mat-sidenav>\n    <router-outlet></router-outlet>\n  </mat-sidenav-container>\n</div>\n\n"
+module.exports = "<!-- Mobile/Tablet -->\n<div class=\"homebar\" [class.is-mobile]=\"mobileQuery.matches\">\n  <mat-toolbar color=\"primary\" class=\"homebar-toolbar\">\n    <button mat-icon-button (click)=\"snav.toggle()\">\n      <mat-icon style=\"font-size: 32px !important\">more_vert</mat-icon>\n    </button>\n    <h1 routerLink= \"\">An Huynh</h1>\n  </mat-toolbar>\n\n  <mat-sidenav-container class=\"sidenav-container\"\n                         [style.marginTop.px]=\"mobileQuery.matches ? 56 : 0\">\n    <mat-sidenav #snav (click)=\"snav.toggle()\" [mode]=\"mobileQuery.matches ? 'over' : 'side'\"\n                 [fixedInViewport]=\"mobileQuery.matches\" fixedTopGap=\"56\">\n      <mat-nav-list>\n        <a mat-list-item routerLink = \"/Skills\"> <b>Skills</b> </a>\n        <a mat-list-item routerLink = \"/Projects\"> <b>Projects</b> </a>\n        <a mat-list-item routerLink = \"/Achievements\"> <b>Achievements</b> </a>\n        <a mat-list-item routerLink = \"/WorkExperience\"> <b>Work Experience</b> </a>\n        <!-- Add information about Meetups I'm in, Hobbies, Interests, Hackathons I've been to ...-->\n\n      </mat-nav-list>\n    </mat-sidenav>\n    <router-outlet></router-outlet>\n  </mat-sidenav-container>\n</div>\n\n"
 
 /***/ }),
 
@@ -298,14 +304,14 @@ var HomebarComponent = /** @class */ (function () {
 /***/ "./src/app/homepage/homepage.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* Top of page - Header/Hero's Image */\n.header-section {\n  background: url('bannerImage.0fabb9e2d94271dbaf27.jpg') 90%;\n  background-repeat: no-repeat;\n  margin: 0;\n  background-size: cover;\n  height: 80vh;\n  text-align: center;\n  display: -ms-flexbox;\n  display: -webkit-box;\n  display: flex;\n  -ms-flex-align: center;\n      -webkit-box-align: center;\n          align-items: center;\n  -ms-flex-pack: center;\n      -webkit-box-pack: center;\n          justify-content: center;\n}\n.header-section .header-section-text {\n  color: #fefefe;\n  text-shadow: 1px 1px 2px #0a0a0a;\n}\n.header-section-text h1 {\n  font-size: 60px;\n  margin: 0;\n}\n.header-section-text h1 span {\n  border: 5px solid white;\n  padding: 6px 14px;\n  display: inline-block;\n}\n.header-description {\n  margin: 20px;\n  display: block;\n  font-size: 30px;\n  text-shadow: 0 0 10px black;\n}\n.btn{\n  color: white;\n  padding: 10px 24px;\n  font-size: 20px;\n  text-decoration: none;\n  background: #aaa1a1;\n  border-radius: 10px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n}\n.btn:hover{\n  background: #80b1b3;\n}\n/* About me AND Contact me*/\n.about-me, .contact-section {\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n  padding-bottom: 30px;\n}\n.about-me:after, .contact-section :after { /* Fixing issue with col-left and col-right not being \"contained\" inside main class */\n  content: '';\n  display:block;\n  clear: both;\n}\n.about-me h2, .contact-section h2 {\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.about-me h2:after, .contact-section h2:after {\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n/* About me */\n.about-me .col-left, .about-me .col-right {\n  padding-top: 20px;\n  width: 50%; /* splitting page in half */\n  float: left;\n}\n.about-me .col-left {\n  content: url('PersonalPic.23395d693e4c2b619453.jpg');\n  padding-left: 5%;\n  padding-right: 5%;\n  max-width: 100%; /* Allows image to automatically resize with browser */\n}\n.about-me .col-right p {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  overflow: auto;\n  font-size: 20px;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:550px) {\n  .about-me .col-left, .about-me .col-right {\n    width:100%; /* The width is 100%, when the viewport is 550px or smaller */\n    padding-left: 20px;\n    padding-right: 20px;\n  }\n}\n/* Contact me */\n.contact-section {\n  text-align: center;\n  padding-bottom: 40px;\n}\n.social-container {\n  padding-top: 20px;\n  width: 80%;\n  margin: 0 auto;\n  text-align: left;\n}\n.social-container i {\n  float: left;\n  margin-top: 17px;\n  margin-right: 20px;\n  font-size: 24px;\n  color: indigo;\n}\n.col-1, .col-2, .col-3 {\n  width: 33.3333333%;\n  display: inline-block;\n  float: left;\n}\n.col-1 p, .col-2 p, .col-3 p {\n  display: inline-block;\n  position: relative;\n}\n.col-3 p{\n  margin-bottom: 0;\n  margin-top: 7px;\n}\n.line2 {\n  padding-top: 10px;\n}\n.text-bold{\n  color: #333;\n  font-weight: bold;\n  margin-bottom: 0;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:715px) {\n  .social-container .col-1, .social-container .col-2, .social-container .col-3 {\n    width:100%; /* The width is 100%, when the viewport is 715px or smaller */\n    margin-left: 20%;\n    padding: 5px;\n  }\n}\n/* Footer */\nfooter{\n  background-color: #d8d4db;\n  width: 100%;\n  padding: 10px 0px;\n}\nfooter:after {\n  content: '';\n  display: block;\n  clear: both;\n}\n.footer-text{\n  text-align: center;\n}\n.footer-text p{\n  margin-top: 5;\n  margin-bottom: 0;\n}\n.brown-text{\n  color: brown;\n  font-weight: bold;\n}\n"
+module.exports = "/* Top of page - Header/Hero's Image */\n.header-section {\n  background: url('bannerImage.0fabb9e2d94271dbaf27.jpg') 90%;\n  background-repeat: no-repeat;\n  margin: 0;\n  background-size: cover;\n  height: 80vh;\n  text-align: center;\n  display: -ms-flexbox;\n  display: -webkit-box;\n  display: flex;\n  -ms-flex-align: center;\n      -webkit-box-align: center;\n          align-items: center;\n  -ms-flex-pack: center;\n      -webkit-box-pack: center;\n          justify-content: center;\n}\n.header-section .header-section-text {\n  color: #fefefe;\n  text-shadow: 1px 1px 2px #0a0a0a;\n}\n.header-section-text h1 {\n  font-size: 60px;\n  margin: 0;\n}\n.header-section-text h1 span {\n  border: 5px solid white;\n  padding: 6px 14px;\n  display: inline-block;\n}\n.header-description {\n  margin: 20px;\n  display: block;\n  font-size: 30px;\n  text-shadow: 0 0 10px black;\n}\n.btn{\n  color: white;\n  padding: 10px 24px;\n  font-size: 20px;\n  text-decoration: none;\n  background: #ff6f00;\n  border-radius: 10px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n}\n.btn:hover{\n  background: #546e7a;\n}\n/* About me AND Contact me*/\n.about-me, .contact-section {\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n  padding-bottom: 30px;\n}\n.about-me:after, .contact-section :after { /* Fixing issue with col-left and col-right not being \"contained\" inside main class */\n  content: '';\n  display:block;\n  clear: both;\n}\n.about-me h2, .contact-section h2 {\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.about-me h2:after, .contact-section h2:after {\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n/* About me */\n.about-me .col-left, .about-me .col-right {\n  padding-top: 20px;\n  width: 50%; /* splitting page in half */\n  float: left;\n}\n.about-me .col-left {\n  content: url('PersonalPic.23395d693e4c2b619453.jpg');\n  padding-left: 5%;\n  padding-right: 5%;\n  max-width: 100%; /* Allows image to automatically resize with browser */\n}\n.about-me .col-right p {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  overflow: auto;\n  font-size: 20px;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:550px) {\n  .about-me .col-left, .about-me .col-right {\n    width:100%; /* The width is 100%, when the viewport is 550px or smaller */\n    padding-left: 20px;\n    padding-right: 20px;\n  }\n}\n/* Contact me */\n.contact-section {\n  text-align: center;\n  padding-bottom: 40px;\n}\n.social-container {\n  padding-top: 20px;\n  width: 80%;\n  margin: 0 auto;\n  text-align: left;\n}\n.social-container i {\n  float: left;\n  margin-top: 17px;\n  margin-right: 20px;\n  font-size: 24px;\n  color: #0B172A;\n}\n.col-1, .col-2, .col-3 {\n  width: 33.3333333%;\n  display: inline-block;\n  float: left;\n}\n.col-1 p, .col-2 p, .col-3 p {\n  display: inline-block;\n  position: relative;\n}\n.col-3 p{\n  margin-bottom: 0;\n  margin-top: 7px;\n}\n.line2 {\n  padding-top: 10px;\n}\n.text-bold{\n  color: #333;\n  font-weight: bold;\n  margin-bottom: 0;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:715px) {\n  .social-container .col-1, .social-container .col-2, .social-container .col-3 {\n    width:100%; /* The width is 100%, when the viewport is 715px or smaller */\n    margin-left: 20%;\n    padding: 5px;\n  }\n}\n/* Footer */\nfooter{\n  background-color: #546e7a;\n  color: white;\n  width: 100%;\n  padding: 10px 0px;\n}\nfooter:after {\n  content: '';\n  display: block;\n  clear: both;\n}\n.footer-text{\n  text-align: center;\n}\n.footer-text p{\n  margin-top: 5;\n  margin-bottom: 0;\n}\n.link-text{\n  color: #ff6f00;\n  font-weight: bold;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<!-- Hero's Image -->\n<div class=\"header-section\">\n  <div class=\"header-section-text\">\n    <h1><span>Prospective Software Engineer</span></h1>\n    <span class = \"header-description\">BA in Computer Science - Class of 2019</span>\n    <a class = \"btn\" href=\"https://huynhtan97.github.io/Portfolio/assets/AnHuynhResume2019.pdf\"><b>Resume</b></a>\n  </div>\n</div>\n\n<!-- About me -->\n<div class = \"about-me\">\n  <h2>About Me</h2>\n  <div class = \"col-left\">\n    <!-- Personal pic of me here -->\n  </div>\n  <div class = \"col-right\">\n    <p>Hi! Thank you for visiting my website!</p>\n    <p>I'm currently a Senior in Computer Science (with minors in Applied Math and Electrical Engineering) at Wentworth\n      Institute of Technology in Boston, MA. I'm originally from West Hartford, CT and decided to move to the city\n      in order to meet new people and seek opportunities in the city.</p>\n    <p>I got into the field back in my Junior Year of high school where I took my first computer programming class. From there, I have both\n      learned and gotten involved more within the field from attending hackathons, to self-teaching myself various languages like Javascript and PHP.</p>\n    <p><b>To view my skills, projects, achievements, and hobbies:</b> Please click on the 3 dotted menu button in the toolbar.</p>\n  </div>\n</div>\n\n<!-- Contact Me -->\n<div class = \"contact-section\">\n  <h2>Contact Me</h2>\n  <div class = \"social-container\">\n    <div class = \"col-1\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">local_phone</i>\n        <p> <span class = \"text-bold\">Phone Number:</span> <br/>  <a href=\"tel: 1-860-794-1274\">1-860-794-1274</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">mail_outline</i>\n        <p> <span class = \"text-bold\">Email:</span> <br/> <a href=\"mailto:\">huynha1@wit.edu</a></p>\n      </div>\n    </div>\n    <div class = \"col-2\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">account_circle</i>\n        <p> <span class = \"text-bold\">Linkedin:</span> <br/> <a href=\"https://www.linkedin.com/in/huynhan1/\">@huynha1</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">code</i>\n        <p> <span class = \"text-bold\">Github:</span> <br/> <a href=\"https://github.com/huynhtan97\">@huynhtan97</a></p>\n      </div>\n    </div>\n    <div class = \"col-3\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">location_on</i>\n        <p> <span class = \"text-bold\">Current City:</span> <br/> <a href=\"https://goo.gl/maps/cUr6fd9R7ZS2\">Boston, MA</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">create</i>\n        <p> <span class = \"text-bold\">Medium:</span> <br/> <a href=\"https://medium.com/hackwitus/meet-an-2406e0d7540d\">An Huynh</a></p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<footer>\n  <div class = \"footer-text\">\n    <p> Made with <a class=\"brown-text\" href=\"https://angular.io/guide/quickstart\">Angular 5+</a>\n      and hosted on <a class=\"brown-text\" href=\"https://github.com/huynhtan97/huynhtan97.github.io\">Github</a> </p>\n  </div>\n</footer>\n"
+module.exports = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<!-- Hero's Image -->\n<div class=\"header-section\">\n  <div class=\"header-section-text\">\n    <h1><span>Prospective Software Engineer</span></h1>\n    <span class = \"header-description\">BA in Computer Science - Class of 2019</span>\n    <a class = \"btn\" href=\"https://huynhtan97.github.io/Portfolio/assets/AnHuynhResume2019.pdf\"><b>Resume</b></a>\n  </div>\n</div>\n\n<!-- About me -->\n<div class = \"about-me\">\n  <h2>About Me</h2>\n  <div class = \"col-left\">\n    <!-- Personal pic of me here -->\n  </div>\n  <div class = \"col-right\">\n    <p>Hi! Thank you for visiting my website!</p>\n    <p>I'm currently a Senior in Computer Science (with minors in Applied Math and Electrical Engineering) at Wentworth\n      Institute of Technology in Boston, MA. I'm originally from West Hartford, CT and decided to move to the city\n      in order to meet new people and seek opportunities in the city.</p>\n    <p>I got into the field back in my Junior Year of high school where I took my first computer programming class. From there, I have both\n      learned and gotten involved more within the field from attending hackathons, to self-teaching myself various languages like Javascript and PHP.</p>\n    <p><b>To view my skills, projects, achievements, and work experience:</b> Please click on the 3 dotted menu button in the toolbar.</p>\n  </div>\n</div>\n\n<!-- Contact Me -->\n<div class = \"contact-section\">\n  <h2>Contact Me</h2>\n  <div class = \"social-container\">\n    <div class = \"col-1\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">local_phone</i>\n        <p> <span class = \"text-bold\">Phone Number:</span> <br/>  <a href=\"tel: 1-860-794-1274\">1-860-794-1274</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">mail_outline</i>\n        <p> <span class = \"text-bold\">Email:</span> <br/> <a href=\"mailto:\">huynha1@wit.edu</a></p>\n      </div>\n    </div>\n    <div class = \"col-2\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">account_circle</i>\n        <p> <span class = \"text-bold\">Linkedin:</span> <br/> <a href=\"https://www.linkedin.com/in/huynhan1/\">@huynha1</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">code</i>\n        <p> <span class = \"text-bold\">Github:</span> <br/> <a href=\"https://github.com/huynhtan97\">@huynhtan97</a></p>\n      </div>\n    </div>\n    <div class = \"col-3\">\n      <div class =\"line1\">\n        <i class = \"material-icons\">location_on</i>\n        <p> <span class = \"text-bold\">Current City:</span> <br/> <a href=\"https://goo.gl/maps/cUr6fd9R7ZS2\">Boston, MA</a></p>\n      </div>\n      <div class =\"line2\">\n        <i class = \"material-icons\">create</i>\n        <p> <span class = \"text-bold\">Medium:</span> <br/> <a href=\"https://medium.com/hackwitus/meet-an-2406e0d7540d\">An Huynh</a></p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Footer -->\n<footer>\n  <div class = \"footer-text\">\n    <p> Made with <a class=\"link-text\" href=\"https://angular.io/guide/quickstart\">Angular 5+</a>\n      and hosted on <a class=\"link-text\" href=\"https://github.com/huynhtan97/huynhtan97.github.io\">Github</a> </p>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -441,14 +447,14 @@ var AppMaterialModules = /** @class */ (function () {
 /***/ "./src/app/projects/projects.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n\n/* Creating the \"section\" line */\n\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n\n/* For the cards */\n\n.cards {\n  padding: 30px;\n  margin-bottom: 16px;\n}\n\nmat-card {\n  margin: 15px;\n}\n"
+module.exports = ".header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n\n/* Creating the \"section\" line */\n\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n\n/* For the cards\n.cards {\n  padding: 30px;\n  margin-bottom: 16px;\n}\n\nmat-card {\n  margin: 15px;\n}\n*/\n\n/* For grid tiles */\n\nmat-grid-tile:hover{\n  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  cursor: pointer;\n}\n\n.container {\n  position: relative;\n  text-align: center;\n  font-size: 150%;\n  font-weight: 600;\n}\n\n.centered {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n\n.container .btn {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  background-color: #555;\n  color: white;\n  font-size: 16px;\n  padding: 12px 24px;\n  border: none;\n  cursor: pointer;\n  border-radius: 5px;\n  text-align: center;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/projects/projects.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"header\">\n  <h2>Highlighted Projects</h2>\n</div>\n\n<!--\n<div class=\"cards\" fxLayout=\"row\" fxLayout.lt-md=\"column\"  fxLayoutGap=\"10px\" fxLayoutAlign=\"center\">\n  <div fxLayout.gt-md=\"row\" fxLayout.lt-sm=\"column\"  fxLayoutGap=\"10px\" fxFlex=\"100\"  fxFlex.gt-md=\"50\">\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>1</mat-card></div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>2</mat-card></div>\n  </div>\n  <div fxLayout.gt-md=\"row\" fxLayout.lt-sm=\"column\" fxLayoutGap=\"10px\" fxFlex=\"100\"   fxFlex.gt-md=\"50\">\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>3</mat-card></div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>4</mat-card></div>\n  </div>\n</div>\n-->\n<!-- Keep cards in a row until width < 959px -->\n<div class=\"cards\" fxLayout=\"row\" fxLayout.lt-md=\"column\"  fxLayoutGap=\"10px\" fxLayoutAlign=\"center\">\n  <!--Move all cards to one column if width < 1279px -->\n  <div fxLayout.lt-lg=\"column\" fxLayoutGap=\"20px\" fxFlex=\"90\">\n    <!-- Keep cards in grid and not overlap eachother -->\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n      <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n      <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n  </div>\n\n  <div fxLayout.lt-lg=\"column\" fxLayoutGap=\"20px\" fxFlex=\"90\">\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n     <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n      <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n\n  </div>\n</div>\n"
+module.exports = "<div class = \"header\">\n  <h2>Highlighted Projects</h2>\n</div>\n\n<!-- Using grid tiles -->\n<div class=\"tiles\">\n  <mat-grid-list cols=\"2\" rowHeight=\"2:1\" style=\"margin: 20px;\">\n    <mat-grid-tile colspan=\"1\">\n      <div class=\"container\" style=\"color:black;\">\n        <a href=\"https://github.com/huynhtan97/sheFightsBack\">\n          <img src=\"../../assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"width:100%;\">\n        </a>\n        <div class=\"centered\">SheFightsBack</div>\n      </div>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"1\">\n      <div class=\"container\" style=\"color:red;\">\n        <a href=\"https://github.com/huynhtan97/nodeRedFaceRecognition\">\n          <img src=\"../../assets/images/imageRecognitionApp.png\" alt=\"shefightsback\" style=\"width:100%;\">\n        </a>\n        <div class=\"centered\">IBM Cloud Image Recognition</div>\n      </div>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"1\">\n      <div class=\"container\" style=\"color:black;\">\n        <a href=\"https://github.com/huynhtan97/mood-bot\">\n          <img src=\"../../assets/images/chatBotApp.jpg\" alt=\"shefightsback\" style=\"width:100%;\">\n        </a>\n        <div class=\"centered\">IBM Cloud Chat bot</div>\n      </div>\n    </mat-grid-tile>\n    <mat-grid-tile colspan=\"1\">\n      <div class=\"container\" style=\"color:yellow;\">\n        <a href=\"https://github.com/huynhtan97/sheFightsBack\">\n          <img src=\"../../assets/images/sugARPokeApp.jpg\" alt=\"shefightsback\" style=\"width:100%;\">\n        </a>\n        <div class=\"centered\">sugAR Poke</div>\n      </div>\n    </mat-grid-tile>\n  </mat-grid-list>\n</div>\n\n\n<!-- Using cards\n<div class=\"cards\" fxLayout=\"row\" fxLayout.lt-md=\"column\"  fxLayoutGap=\"10px\" fxLayoutAlign=\"center\">\n  <div fxLayout.gt-md=\"row\" fxLayout.lt-sm=\"column\"  fxLayoutGap=\"10px\" fxFlex=\"100\"  fxFlex.gt-md=\"50\">\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>1</mat-card></div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>2</mat-card></div>\n  </div>\n  <div fxLayout.gt-md=\"row\" fxLayout.lt-sm=\"column\" fxLayoutGap=\"10px\" fxFlex=\"100\"   fxFlex.gt-md=\"50\">\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>3</mat-card></div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\" ><mat-card>4</mat-card></div>\n  </div>\n</div>\n-->\n<!-- Keep cards in a row until width < 959px\n<div class=\"cards\" fxLayout=\"row\" fxLayout.lt-md=\"column\"  fxLayoutGap=\"10px\" fxLayoutAlign=\"center\">\n  <!--Move all cards to one column if width < 1279px\n  <div fxLayout.lt-lg=\"column\" fxLayoutGap=\"20px\" fxFlex=\"90\">\n    <!-- Keep cards in grid and not overlap eachother\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n      <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n      <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n  </div>\n\n  <div fxLayout.lt-lg=\"column\" fxLayoutGap=\"20px\" fxFlex=\"90\">\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n     <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n    <div fxFlex.lt-lg=\"50\" fxFlex.lt-sm=\"100\">\n      <mat-card>\n        <mat-card-header>\n          <mat-card-title><h4>shefightsback</h4></mat-card-title>\n        </mat-card-header>\n        <img mat-card-image src=\"https://huynhtan97.github.io/Portfolio/assets/images/sheFightsBack.png\" alt=\"shefightsback\" style=\"max-height: 300px\">\n        <mat-card-content>\n          <p>\n            Winner of Most Innovative and She Learns (Best Beginners) prize at SheHacks 2018. Mobile application aimed to allow victims of\n            domestic abuse to efficiently report incidents and reach out for help without risk of personal safety.\n          </p>\n        </mat-card-content>\n        <mat-card-actions>\n          <a mat-button href=\"https://github.com/huynhtan97/sheFightsBack\">View Github</a>\n        </mat-card-actions>\n      </mat-card>\n    </div>\n\n  </div>\n</div> -->\n\n\n"
 
 /***/ }),
 
@@ -498,7 +504,7 @@ module.exports = "/* Contains all the chips */\n.body{\n  padding: 0px 20px 20px
 /***/ "./src/app/skills/skills.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"header\">\n  <h2>My Skills and Experiences</h2>\n  <h5>Hover over each chip for additional information</h5>\n</div>\n\n<!-- Move each card, chip list, and header into its own directive? -->\n\n<div class = \"body\">\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Languages</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of languagesAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Tools/Services</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of toolsAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Frameworks</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of frameworksAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Software</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of softwareAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Soft Skills</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of softskillsAndColor\" selected [color]=\"chip.color\" [matTooltip]=\"chip.from\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n</div>\n"
+module.exports = "<div class = \"header\">\n  <h2>My Skills and Experiences</h2>\n  <h5>Hover over each chip for additional information</h5>\n</div>\n\n<!-- Move each card, chip list, and header into its own directive? -->\n\n<div class = \"body alternate-theme\">\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Languages</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of languagesAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Tools/Services</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of toolsAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Frameworks</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of frameworksAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Software</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of softwareAndColors\" selected [color]=\"chip.color\" [matTooltip]=\"chip.years\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n\n  <mat-card>\n    <mat-card-header>\n      <mat-card-title><h4>Soft Skills</h4></mat-card-title>\n    </mat-card-header>\n    <mat-divider></mat-divider>\n    <mat-chip-list>\n      <mat-chip *ngFor=\"let chip of softskillsAndColor\" selected [color]=\"chip.color\" [matTooltip]=\"chip.from\" matTooltipPosition='above'>\n        {{chip.skill}}\n      </mat-chip>\n    </mat-chip-list>\n  </mat-card>\n</div>\n"
 
 /***/ }),
 
@@ -523,73 +529,72 @@ var SkillsComponent = /** @class */ (function () {
         /**
          * @type {TechSkills[]}
          * @memberof SkillsComponent
-         * if years >= 3, then color = warn
+         * if years >= 3, then color = primary
          * if years == 2, then color = accent
-         * if years < 2, then color = primary
+         * if years < 2, then color = warn
          */
         this.languagesAndColors = [
-            { skill: 'Java', years: '4+ years', color: 'warn' },
-            { skill: 'Javascript', years: '3+ years', color: 'warn' },
+            { skill: 'Java', years: '5+ years', color: 'primary' },
+            { skill: 'Javascript', years: '3+ years', color: 'primary' },
             { skill: 'Typescript', years: '2+ years', color: 'accent' },
-            { skill: 'jQuery', years: '1+ years', color: 'primary' },
+            { skill: 'jQuery', years: '1+ years', color: 'warn' },
             { skill: 'Python', years: '2+ years', color: 'accent' },
-            { skill: 'PHP', years: '1+ years', color: 'primary' },
-            { skill: 'HTML', years: '3+ years', color: 'warn' },
-            { skill: 'CSS/Sass/Bootstrap', years: '3+ years', color: 'warn' },
-            { skill: 'C', years: '1+ years', color: 'primary' },
-            { skill: 'C++', years: '1+ years', color: 'primary' },
-            { skill: 'Shell scripting', years: '1+ years', color: 'primary' },
-            { skill: 'Scala', years: '1+ years', color: 'primary' },
+            { skill: 'PHP', years: '1+ years', color: 'warn' },
+            { skill: 'HTML', years: '3+ years', color: 'primary' },
+            { skill: 'CSS/Bootstrap', years: '3+ years', color: 'primary' },
+            { skill: 'C', years: '1+ years', color: 'warn' },
+            { skill: 'C++', years: '1+ years', color: 'warn' },
+            { skill: 'Shell scripting', years: '1+ years', color: 'warn' },
+            { skill: 'Scala', years: '1+ years', color: 'warn' },
             { skill: 'Ruby', years: '2+ years', color: 'accent' },
             { skill: 'Matlab', years: '2+ years', color: 'accent' },
-            { skill: 'Markdown', years: '3+ years', color: 'warn' },
-            { skill: 'LaTeX', years: '1+ years', color: 'primary' },
-            { skill: 'R', years: '1+ years', color: 'primary' },
-            { skill: 'SQL', years: '3+ years', color: 'warn' },
+            { skill: 'Markdown', years: '3+ years', color: 'primary' },
+            { skill: 'LaTeX', years: '1+ years', color: 'warn' },
+            { skill: 'R', years: '1+ years', color: 'warn' },
+            { skill: 'SQL', years: '3+ years', color: 'primary' },
         ];
         this.toolsAndColors = [
             { skill: 'AWS', years: '2+ years', color: 'accent' },
-            { skill: 'Google Cloud Platform', years: '1+ years', color: 'primary' },
-            { skill: 'IBM Cloud', years: '1+ years', color: 'primary' }
+            { skill: 'Google Cloud Platform', years: '1+ years', color: 'warn' },
+            { skill: 'IBM Cloud', years: '1+ years', color: 'warn' }
         ];
         this.frameworksAndColors = [
             { skill: 'AngularJS', years: '2+ years', color: 'accent' },
             { skill: 'Rails', years: '2+ years', color: 'accent' },
-            { skill: 'React', years: '1+ years', color: 'primary' },
+            { skill: 'React', years: '1+ years', color: 'warn' },
         ];
         this.softwareAndColors = [
             { skill: 'Android Studio', years: '2+ years', color: 'primary' },
             { skill: 'XCode', years: '2+ years', color: 'accent' },
-            { skill: 'Rails', years: '2+ years', color: 'accent' },
-            { skill: 'MySQL', years: '3+ years', color: 'warn' },
+            { skill: 'MySQL', years: '3+ years', color: 'primary' },
             { skill: 'MongoDB', years: '2+ years', color: 'accent' },
             { skill: 'Microsoft SQL Server', years: '2+ years', color: 'accent' },
-            { skill: 'Github', years: '4+ years', color: 'warn' },
+            { skill: 'Github', years: '4+ years', color: 'primary' },
             { skill: 'Heroku', years: '2+ years', color: 'accent' },
             { skill: 'Spring Tool Suite', years: '2+ years', color: 'accent' },
-            { skill: 'ServiceNow', years: '1+ years', color: 'primary' },
-            { skill: 'Unity', years: '3+ years', color: 'warn' },
-            { skill: 'Microsoft Office', years: '8+ years', color: 'warn' },
+            { skill: 'ServiceNow', years: '1+ years', color: 'warn' },
+            { skill: 'Unity', years: '3+ years', color: 'primary' },
+            { skill: 'Microsoft Office', years: '8+ years', color: 'primary' },
         ];
         /**
          * @type {SoftSkills[]}
          * @memberof SkillsComponent
-         * if from == Internships, then color = warn
+         * if from == Internships, then color = primary
          * if from == School Clubs, then color = accent
-         * if from == (Anything else), then color = primary
+         * if from == (Anything else), then color = warn
          */
         this.softskillsAndColor = [
             { skill: 'Organization', from: 'School', color: 'primary' },
             { skill: 'Teamwork', from: 'School Clubs', color: 'accent' },
             { skill: 'Team Leadership', from: 'School Clubs', color: 'accent' },
-            { skill: 'Public Speaking', from: 'Self-taught', color: 'primary' },
-            { skill: 'Communication', from: 'School+Internships', color: 'warn' },
-            { skill: 'Accountability', from: 'School Clubs+Internships', color: 'warn' },
+            { skill: 'Public Speaking', from: 'Self-taught', color: 'warn' },
+            { skill: 'Communication', from: 'School+Internships', color: 'primary' },
+            { skill: 'Accountability', from: 'School Clubs+Internships', color: 'primary' },
             { skill: 'Time Management', from: 'School Clubs', color: 'accent' },
             { skill: 'Listening', from: 'School', color: 'primary' },
-            { skill: 'Adaptability', from: 'School Clubs+Internships', color: 'warn' },
+            { skill: 'Adaptability', from: 'School Clubs+Internships', color: 'primary' },
             { skill: 'Quick Learner', from: 'Internships', color: 'primary' },
-            { skill: 'Problem-Solving', from: 'School Clubs+Internships', color: 'warn' },
+            { skill: 'Problem-Solving', from: 'School Clubs+Internships', color: 'primary' },
             { skill: 'Self-Motivation', from: 'School', color: 'primary' }
         ];
     }
@@ -602,6 +607,56 @@ var SkillsComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], SkillsComponent);
     return SkillsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/work-experience/work-experience.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/work-experience/work-experience.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  work-experience works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/work-experience/work-experience.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WorkExperienceComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var WorkExperienceComponent = /** @class */ (function () {
+    function WorkExperienceComponent() {
+    }
+    WorkExperienceComponent.prototype.ngOnInit = function () {
+    };
+    WorkExperienceComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-work-experience',
+            template: __webpack_require__("./src/app/work-experience/work-experience.component.html"),
+            styles: [__webpack_require__("./src/app/work-experience/work-experience.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], WorkExperienceComponent);
+    return WorkExperienceComponent;
 }());
 
 
