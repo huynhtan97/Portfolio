@@ -717,14 +717,14 @@ var SkillsComponent = /** @class */ (function () {
 /***/ "./src/app/work-experience/work-experience.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "/* Header */\n.header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n.header h5{\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  position: relative;\n  margin-bottom: 20px;\n}\nmat-vertical-stepper{\n  padding: 10px;\n}\n/* Text inside each step */\n.stepText h4{\n  color: #ff6f00;\n}\n.stepText h5{\n  color: rgb(144, 168, 5);\n}\n/* Step icon */\n.mat-vertical-stepper-header .mat-step-icon, .mat-vertical-stepper-header .mat-step-icon-not-touched {\n  font-size: 0px;\n    margin-left: 10px;\n    background-color: black;\n    height: 5px;\n    width: 5px;\n}\n.mat-vertical-stepper-header .mat-step-icon, .mat-vertical-stepper-header .mat-step-icon-touched {\n  font-size: 0px;\n    margin-left: 10px;\n    background-color: black;\n    height: 5px;\n    width: 5px;\n}\nmat-step-header[ng-reflect-selected=\"true\"] .mat-step-icon{\n  font-size: 12px;\n  -ms-flex-item-align: center;\n      -ms-grid-row-align: center;\n      align-self: center;\n  color: white;\n  height: 20px;\n  width: 20px;\n}\nmat-step-header[ng-reflect-selected=\"false\"] .mat-step-icon .mat-icon{\n display: none\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/work-experience/work-experience.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  work-experience works!\n</p>\n"
+module.exports = "<div class = \"header\">\n  <h2>Work Experiences</h2>\n  <h5>Click on each row to see more information</h5>\n</div>\n\n<div fxLayoutAlign=\"center center\" fxLayout=\"column\">\n  <mat-vertical-stepper>\n    <!-- change default mat-step 'edit' icon -->\n    <ng-template matStepperIcon=\"edit\">\n      <mat-icon>bubble_chart</mat-icon>\n    </ng-template>\n    <mat-step *ngFor=\"let item of WorkExperiences; let i= index;\" [label]=\"item.label\">\n      <div class=\"stepText\">\n        <h4>{{item.role}}</h4>\n        <h5>{{item.date}}</h5>\n        <h6>Skills: {{item.description}}</h6>\n      </div>\n    </mat-step>\n  </mat-vertical-stepper>\n</div>\n"
 
 /***/ }),
 
@@ -746,6 +746,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var WorkExperienceComponent = /** @class */ (function () {
     function WorkExperienceComponent() {
+        this.WorkExperiences = [
+            {
+                label: 'Staples, Inc',
+                role: 'Digital Solutions Intern',
+                date: 'June 2017 - Auguest 2017',
+                description: "AngularJs, Javascript, REST APIs, Python",
+            },
+            {
+                label: 'Visible Systems Corporation',
+                role: 'Product and Platform Developer Intern',
+                date: 'September 2017 - December 2017',
+                description: "Big Data Applications (Hadoop + Presto), Mendix, AWS Athena and Quicksight",
+            },
+            {
+                label: 'Eaton Vance',
+                role: 'IT Distribution Systems Intern',
+                date: 'January 2018 - May 2018',
+                description: "Angular 5, PL/SQL, PHP, Oracle Database",
+            },
+            {
+                label: 'Pegasystems',
+                role: 'Junior System Architect Intern',
+                date: 'May 2018 - August 2018',
+                description: "Jenkins, Python, Agile-Scrum methodology",
+            },
+            {
+                label: 'Amazon Robotics',
+                role: 'Solution Analytics Intern',
+                date: 'September 2018 - December 2018',
+                description: "Java, AngularJs, Webpack, Coral Service Framework, AWS Lambda, DynamoDB",
+            },
+        ];
     }
     WorkExperienceComponent.prototype.ngOnInit = function () {
     };
