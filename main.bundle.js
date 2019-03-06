@@ -724,7 +724,7 @@ module.exports = "/* Header */\n.header:after{\n  content: '';\n  display:block;
 /***/ "./src/app/work-experience/work-experience.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"header\">\n  <h2>Work Experiences</h2>\n  <h5>Click on each row to see more information</h5>\n</div>\n\n<div fxLayoutAlign=\"center center\" fxLayout=\"column\">\n  <mat-vertical-stepper>\n    <!-- change default mat-step 'edit' icon -->\n    <ng-template matStepperIcon=\"edit\">\n      <mat-icon>bubble_chart</mat-icon>\n    </ng-template>\n    <mat-step *ngFor=\"let item of WorkExperiences; let i= index;\" [label]=\"item.label\">\n      <div class=\"stepText\">\n        <h4>{{item.role}}</h4>\n        <h5>{{item.date}}</h5>\n        <h6>Skills: {{item.description}}</h6>\n      </div>\n    </mat-step>\n  </mat-vertical-stepper>\n</div>\n"
+module.exports = "<div class = \"header\">\n  <h2>Work Experience</h2>\n  <h5>Click on each row to see more information</h5>\n</div>\n\n<div fxLayoutAlign=\"center center\" fxLayout=\"column\">\n  <mat-vertical-stepper>\n    <!-- change default mat-step 'edit' icon -->\n    <ng-template matStepperIcon=\"edit\">\n      <mat-icon>bubble_chart</mat-icon>\n    </ng-template>\n    <mat-step *ngFor=\"let item of WorkExperiences; let i= index;\" [label]=\"item.label\">\n      <div class=\"stepText\">\n        <h4>{{item.role}}</h4>\n        <h5>{{item.date}}</h5>\n        <h6>Skills: {{item.description}}</h6>\n      </div>\n    </mat-step>\n  </mat-vertical-stepper>\n</div>\n"
 
 /***/ }),
 
