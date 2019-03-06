@@ -20,14 +20,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/achievements/achievements.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "/* Header */\n.header:after{\n  content: '';\n  display:block;\n  clear: both;\n}\n.header h2 {\n  color: #666666;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.header h2:after{\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n.header h5{\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  position: relative;\n  margin-bottom: 20px;\n}\nmat-vertical-stepper{\n  padding: 10px;\n}\n/* Text inside each step */\n.stepText h4{\n  color: #ff6f00;\n}\n.stepText h5{\n  color: rgb(144, 168, 5);\n}\n/* Step icon */\n.mat-vertical-stepper-header .mat-step-icon, .mat-vertical-stepper-header .mat-step-icon-not-touched {\n  font-size: 0px;\n    margin-left: 10px;\n    background-color: black;\n    height: 5px;\n    width: 5px;\n}\n.mat-vertical-stepper-header .mat-step-icon, .mat-vertical-stepper-header .mat-step-icon-touched {\n  font-size: 0px;\n    margin-left: 10px;\n    background-color: black;\n    height: 5px;\n    width: 5px;\n}\nmat-step-header[ng-reflect-selected=\"true\"] .mat-step-icon{\n  font-size: 12px;\n  -ms-flex-item-align: center;\n      -ms-grid-row-align: center;\n      align-self: center;\n  color: white;\n  height: 20px;\n  width: 20px;\n}\nmat-step-header[ng-reflect-selected=\"false\"] .mat-step-icon .mat-icon{\n display: none\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/achievements/achievements.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-vertical-stepper>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"HackWITUs\">\n    <h4>Head of Finance for HackWITUs</h4>\n    <h5>March 2017</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n  <mat-step label=\"CSS\">\n    <h4>Treasurer of CSS</h4>\n    <h5>September 2016</h5>\n    <h6>Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM</h6>\n  </mat-step>\n</mat-vertical-stepper>\n"
+module.exports = "<div class = \"header\">\n  <h2>Achievements</h2>\n  <h5>Click on each row to see more information</h5>\n</div>\n\n<div fxLayoutAlign=\"center center\" fxLayout=\"column\">\n  <mat-vertical-stepper>\n    <!-- change default mat-step 'edit' icon -->\n    <ng-template matStepperIcon=\"edit\">\n      <mat-icon>bubble_chart</mat-icon>\n    </ng-template>\n    <mat-step *ngFor=\"let item of Achievements; let i= index;\" [label]=\"item.label\">\n      <div class=\"stepText\">\n        <h4>{{item.role}}</h4>\n        <h5>{{item.date}}</h5>\n        <h6>{{item.description}}</h6>\n      </div>\n    </mat-step>\n  </mat-vertical-stepper>\n</div>\n"
 
 /***/ }),
 
@@ -49,6 +49,68 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AchievementsComponent = /** @class */ (function () {
     function AchievementsComponent() {
+        this.Achievements = [
+            {
+                label: 'Wentworth\'s Computer Science Society',
+                role: 'Treasurer',
+                date: 'September 2016',
+                description: "Elected Treasurer for Wentworth's first Computer Science organization that is a Chapter of ACM",
+            },
+            {
+                label: 'HackWITUs 1',
+                role: 'Head of Finance',
+                date: 'March 2017',
+                description: "https://hackwit.us/ - Helped raise more than $10,000 in sponsorships through reaching out to personal network and\n                    company representatives. Managed event's cash flow (Food, Venue ..etc) and maintained transparency with spreadsheets",
+            },
+            {
+                label: 'LeaderShape',
+                role: 'Sponsored by Wentworth',
+                date: 'May 2017',
+                description: "https://www.leadershape.org/ - Learned how to become an impactful leader in my community and be inclusive of\n                    team members",
+            },
+            {
+                label: 'Wentworth\'s Student Government',
+                role: 'Treasurer',
+                date: 'September 2017',
+                description: "First female elected Treasurer in 7+ years. Directed co-sponsorship program and managed annual $8500 budget",
+            },
+            {
+                label: 'Node.js Interactive 2017',
+                role: 'Sponsored by Wentworth',
+                date: 'October 2017',
+                description: "Sponsored by Wentworth to attend Node.js Interactive conference 2017 in Vancouver, Canada.\n                    Networked with developers in industry, learned how various companies utilize Javascript frameworks,\n                    and attended live demos",
+            },
+            {
+                label: 'HackWITUs 2',
+                role: 'Head of Finance',
+                date: 'November 2017',
+                description: "Served as Head of Finance again for Wentworth's second annual hackathon.\n                    Helped raise more than $10,000 in sponsorships",
+            },
+            {
+                label: 'CIO Search Committee',
+                role: 'Student Representative',
+                date: 'December 2017',
+                description: "Recommended by Dean of Students to serve as Student Representative. Interviewed 9 candidates and helped narrow to 1",
+            },
+            {
+                label: 'Community Standards Board',
+                role: 'Council Member',
+                date: 'April 2018',
+                description: "Elected Treasurer for Wentworth's first Computer Science Society - Chapter of ACM",
+            },
+            {
+                label: 'HackWITUs 3',
+                role: 'Head of Sponsorship',
+                date: 'November 2018',
+                description: "New position to soley focus on sponsorship management (inspired by SheHacks organization team)",
+            },
+            {
+                label: 'Information Security Council',
+                role: 'Student Representative',
+                date: 'January 2019',
+                description: "Recommended by Director of Student Engagement. Brainstorm with CIO and various faculty members on how to\n                    increase campus data security",
+            },
+        ];
     }
     AchievementsComponent.prototype.ngOnInit = function () {
     };
@@ -304,7 +366,7 @@ var HomebarComponent = /** @class */ (function () {
 /***/ "./src/app/homepage/homepage.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* Top of page - Header/Hero's Image */\n.header-section {\n  background: url('bannerImage.0fabb9e2d94271dbaf27.jpg') 90%;\n  background-repeat: no-repeat;\n  margin: 0;\n  background-size: cover;\n  height: 80vh;\n  text-align: center;\n  display: -ms-flexbox;\n  display: -webkit-box;\n  display: flex;\n  -ms-flex-align: center;\n      -webkit-box-align: center;\n          align-items: center;\n  -ms-flex-pack: center;\n      -webkit-box-pack: center;\n          justify-content: center;\n}\n.header-section .header-section-text {\n  color: #fefefe;\n  text-shadow: 1px 1px 2px #0a0a0a;\n}\n.header-section-text h1 {\n  font-size: 60px;\n  margin: 0;\n}\n.header-section-text h1 span {\n  border: 5px solid white;\n  padding: 6px 14px;\n  display: inline-block;\n}\n.header-description {\n  margin: 20px;\n  display: block;\n  font-size: 30px;\n  text-shadow: 0 0 10px black;\n}\n.resumeBtn{\n  color: white;\n  padding: 10px 24px;\n  font-size: 20px;\n  text-decoration: none;\n  background: #ff6f00;\n  border-radius: 10px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n}\n.reactBtn{\n  color: white;\n  padding: 10px 24px;\n  font-size: 20px;\n  text-decoration: none;\n  background: #2a99e2;\n  border-radius: 10px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n}\n.resumeBtn:hover, .reactBtn:hover{\n  background: #546e7a;\n}\n/* About me AND Contact me*/\n.about-me, .contact-section {\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n  padding-bottom: 30px;\n}\n.about-me:after, .contact-section:after { /* Fixing issue with col-left and col-right not being \"contained\" inside main class */\n  content: '';\n  display:block;\n  clear: both;\n}\n.about-me h2, .contact-section h2 {\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.about-me h2:after, .contact-section h2:after {\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n/* About me */\n.about-me .col-left, .about-me .col-right {\n  padding-top: 20px;\n  width: 50%; /* splitting page in half */\n  float: left;\n}\n.about-me .col-left {\n  content: url('PersonalPic.23395d693e4c2b619453.jpg');\n  padding-left: 5%;\n  padding-right: 5%;\n  max-width: 100%; /* Allows image to automatically resize with browser */\n}\n.about-me .col-right p {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  overflow: auto;\n  font-size: 20px;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:550px) {\n  .about-me .col-left, .about-me .col-right {\n    width:100%; /* The width is 100%, when the viewport is 550px or smaller */\n    padding-left: 20px;\n    padding-right: 20px;\n  }\n}\n/* Contact me */\n.contact-section {\n  text-align: center;\n  padding-bottom: 40px;\n}\n.social-container {\n  padding-top: 20px;\n  width: 80%;\n  margin: 0 auto;\n  text-align: left;\n}\n.social-container i {\n  float: left;\n  margin-top: 17px;\n  margin-right: 20px;\n  font-size: 24px;\n  color: #0B172A;\n}\n.col-1, .col-2, .col-3 {\n  width: 33.3333333%;\n  display: inline-block;\n  float: left;\n}\n.col-1 p, .col-2 p, .col-3 p {\n  display: inline-block;\n  position: relative;\n}\n.col-3 p{\n  margin-bottom: 0;\n  margin-top: 7px;\n}\n.line2 {\n  padding-top: 10px;\n}\n.text-bold{\n  color: #333;\n  font-weight: bold;\n  margin-bottom: 0;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:715px) {\n  .social-container .col-1, .social-container .col-2, .social-container .col-3 {\n    width:100%; /* The width is 100%, when the viewport is 715px or smaller */\n    margin-left: 20%;\n    padding: 5px;\n  }\n}\n/* Footer */\nfooter{\n  background-color: #546e7a;\n  color: white;\n  width: 100%;\n  padding: 10px 0px;\n}\nfooter:after {\n  content: '';\n  display: block;\n  clear: both;\n}\n.footer-text{\n  text-align: center;\n}\n.footer-text p{\n  margin-top: 5;\n  margin-bottom: 0;\n}\n.link-text{\n  color: #ff6f00;\n  font-weight: bold;\n}\n"
+module.exports = "/* Top of page - Header/Hero's Image */\n.header-section {\n  background: url('bannerImage.0fabb9e2d94271dbaf27.jpg') 90%;\n  background-repeat: no-repeat;\n  margin: 0;\n  background-size: cover;\n  height: 80vh;\n  text-align: center;\n  display: -ms-flexbox;\n  display: -webkit-box;\n  display: flex;\n  -ms-flex-align: center;\n      -webkit-box-align: center;\n          align-items: center;\n  -ms-flex-pack: center;\n      -webkit-box-pack: center;\n          justify-content: center;\n}\n.header-section .header-section-text {\n  color: #fefefe;\n  text-shadow: 1px 1px 2px #0a0a0a;\n}\n.header-section-text h1 {\n  font-size: 60px;\n  margin: 0;\n}\n.header-section-text h1 span {\n  border: 5px solid white;\n  padding: 6px 14px;\n  display: inline-block;\n}\n.header-description {\n  margin: 20px;\n  display: block;\n  font-size: 30px;\n  text-shadow: 0 0 10px black;\n}\n.resumeBtn{\n  color: white;\n  padding: 10px 24px;\n  font-size: 20px;\n  text-decoration: none;\n  background: #ff6f00;\n  border-radius: 10px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n}\n.reactBtn{\n  color: white;\n  padding: 10px 24px;\n  font-size: 20px;\n  text-decoration: none;\n  background: #b30000;\n  border-radius: 10px;\n  -webkit-transition: 0.3s all;\n  transition: 0.3s all;\n}\n.resumeBtn:hover, .reactBtn:hover{\n  background: #546e7a;\n}\n/* About me AND Contact me*/\n.about-me, .contact-section {\n  width: 100%; /* width of parent element*/\n  padding-top: 30px;\n  padding-bottom: 30px;\n}\n.about-me:after, .contact-section:after { /* Fixing issue with col-left and col-right not being \"contained\" inside main class */\n  content: '';\n  display:block;\n  clear: both;\n}\n.about-me h2, .contact-section h2 {\n  color: #333;\n  text-align: center;\n  text-transform: uppercase;\n  padding-bottom: 10px;\n  position: relative;\n}\n/* Creating the \"section\" line */\n.about-me h2:after, .contact-section h2:after {\n  content: '';\n  position: absolute;\n  width: 80px;\n  height: 2px;\n  margin-left: -40px;\n  left: 50%;\n  bottom: 0px;\n  background-color: #666666;\n}\n/* About me */\n.about-me .col-left, .about-me .col-right {\n  padding-top: 20px;\n  width: 50%; /* splitting page in half */\n  float: left;\n}\n.about-me .col-left {\n  content: url('PersonalPic.23395d693e4c2b619453.jpg');\n  padding-left: 5%;\n  padding-right: 5%;\n  max-width: 100%; /* Allows image to automatically resize with browser */\n}\n.about-me .col-right p {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  overflow: auto;\n  font-size: 20px;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:550px) {\n  .about-me .col-left, .about-me .col-right {\n    width:100%; /* The width is 100%, when the viewport is 550px or smaller */\n    padding-left: 20px;\n    padding-right: 20px;\n  }\n}\n/* Contact me */\n.contact-section {\n  text-align: center;\n  padding-bottom: 40px;\n}\n.social-container {\n  padding-top: 20px;\n  width: 80%;\n  margin: 0 auto;\n  text-align: left;\n}\n.social-container i {\n  float: left;\n  margin-top: 17px;\n  margin-right: 20px;\n  font-size: 24px;\n  color: #0B172A;\n}\n.col-1, .col-2, .col-3 {\n  width: 33.3333333%;\n  display: inline-block;\n  float: left;\n}\n.col-1 p, .col-2 p, .col-3 p {\n  display: inline-block;\n  position: relative;\n}\n.col-3 p{\n  margin-bottom: 0;\n  margin-top: 7px;\n}\n.line2 {\n  padding-top: 10px;\n}\n.text-bold{\n  color: #333;\n  font-weight: bold;\n  margin-bottom: 0;\n}\n/* Specify what page does when screen gets smaller with media query */\n@media screen and (max-width:715px) {\n  .social-container .col-1, .social-container .col-2, .social-container .col-3 {\n    width:100%; /* The width is 100%, when the viewport is 715px or smaller */\n    margin-left: 20%;\n    padding: 5px;\n  }\n}\n/* Footer */\nfooter{\n  background-color: #546e7a;\n  color: white;\n  width: 100%;\n  padding: 10px 0px;\n}\nfooter:after {\n  content: '';\n  display: block;\n  clear: both;\n}\n.footer-text{\n  text-align: center;\n}\n.footer-text p{\n  margin-top: 5;\n  margin-bottom: 0;\n}\n.link-text{\n  color: #ff6f00;\n  font-weight: bold;\n}\n"
 
 /***/ }),
 
@@ -487,19 +549,19 @@ var ProjectsComponent = /** @class */ (function () {
             },
             {
                 title: 'IBM Cloud Image Recognition',
-                img_src: '../../assets/images/imageRecognitionApp.png',
+                img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/imageRecognitionApp.png',
                 alt: 'imageRecognition',
                 link: 'https://github.com/huynhtan97/nodeRedFaceRecognition'
             },
             {
                 title: 'IBM AI Chatbot',
-                img_src: '../../assets/images/chatBotApp.jpg',
+                img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/chatBotApp.jpg',
                 alt: 'AIChatbot',
                 link: 'https://github.com/huynhtan97/mood-bot',
             },
             {
                 title: 'Everlead',
-                img_src: '../../assets/images/everlead.png',
+                img_src: 'https://huynhtan97.github.io/Portfolio/assets/images/everlead.png',
                 alt: 'everlead',
                 link: 'https://github.com/huynhtan97/Everlead',
             },
