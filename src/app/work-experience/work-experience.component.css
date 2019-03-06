@@ -1,0 +1,74 @@
+/* Header */
+.header:after{
+  content: '';
+  display:block;
+  clear: both;
+}
+
+.header h2 {
+  color: #666666;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Creating the "section" line */
+.header h2:after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #666666;
+}
+
+.header h5{
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+mat-vertical-stepper{
+  padding: 10px;
+}
+
+/* Text inside each step */
+.stepText h4{
+  color: #ff6f00;
+}
+
+.stepText h5{
+  color: rgb(144, 168, 5);
+}
+
+/* Step icon */
+.mat-vertical-stepper-header .mat-step-icon, .mat-vertical-stepper-header .mat-step-icon-not-touched {
+  font-size: 0px;
+    margin-left: 10px;
+    background-color: black;
+    height: 5px;
+    width: 5px;
+}
+.mat-vertical-stepper-header .mat-step-icon, .mat-vertical-stepper-header .mat-step-icon-touched {
+  font-size: 0px;
+    margin-left: 10px;
+    background-color: black;
+    height: 5px;
+    width: 5px;
+}
+
+mat-step-header[ng-reflect-selected="true"] .mat-step-icon{
+  font-size: 12px;
+  align-self: center;
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+mat-step-header[ng-reflect-selected="false"] .mat-step-icon .mat-icon{
+ display: none
+}

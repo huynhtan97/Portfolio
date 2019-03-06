@@ -1,3 +1,20 @@
-<p>
-  work-experience works!
-</p>
+<div class = "header">
+  <h2>Work Experiences</h2>
+  <h5>Click on each row to see more information</h5>
+</div>
+
+<div fxLayoutAlign="center center" fxLayout="column">
+  <mat-vertical-stepper>
+    <!-- change default mat-step 'edit' icon -->
+    <ng-template matStepperIcon="edit">
+      <mat-icon>bubble_chart</mat-icon>
+    </ng-template>
+    <mat-step *ngFor="let item of WorkExperiences; let i= index;" [label]="item.label">
+      <div class="stepText">
+        <h4>{{item.role}}</h4>
+        <h5>{{item.date}}</h5>
+        <h6>Skills: {{item.description}}</h6>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>
