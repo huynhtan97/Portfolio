@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod --base-href \"https://huynhtan97.github.io/Portfolio/\"",
-    "deploy:web": "ng deploy --branch=gh-pages",
+    "deploy:web": "ngh deploy --branch=gh-pages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
