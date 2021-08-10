@@ -44,4 +44,4 @@ jobs:
       - name: Deploy
         run: |
           npm i -g angular-cli-ghpages@0.4.1
-          ngh deploy --branch=gh-pages
+          ngh deploy --repo=https://huynhtan97:${{ secrets.GH_ACCESS_TOKEN }}@github.com/huynhtan97/Portfolio.git --branch=gh-pages
