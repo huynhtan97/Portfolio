@@ -43,8 +43,3 @@ jobs:
           base_href: https://huynhtan97.github.io/Portfolio/   # make sure this corresponds to https://<your_username>.github.io/<base_href>/
           deploy_branch: gh-pages # The branch the action should deploy to.
           angular_dist_build_folder: dist # The folder where your project is supposed to be after running ng build by the action.
-      
-      - name: Deploy
-        run: |
-          npm i -g angular-cli-ghpages@0.4.1
-          ngh deploy --repo=https://huynhtan97:${{ secrets.GH_ACCESS_TOKEN }}@github.com/huynhtan97/Portfolio.git --branch=gh-pages
