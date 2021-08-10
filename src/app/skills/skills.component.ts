@@ -29,7 +29,7 @@ export class SkillsComponent {
    * if years < 2, then color = warn
    */
   languagesAndColors: TechSkills[] = [
-    {skill: 'Java', years: '5+ years', color: 'primary'},
+    {skill: 'Java', years: '7+ years', color: 'primary'},
     {skill: 'Javascript', years: '3+ years', color: 'primary'},
     {skill: 'Typescript', years: '2+ years', color: 'accent'},
     {skill: 'jQuery', years: '1+ years', color: 'warn'},
