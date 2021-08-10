@@ -38,7 +38,10 @@ jobs:
 
       - name: install, build and test
         run: |
-          npm i -g angular-cli-ghpages@0.4.1
           npm install
           npm run build
+
+      - name: Deploy
+        run: |
+          npm i -g angular-cli-ghpages@0.4.1
           ngh deploy --branch=gh-pages
